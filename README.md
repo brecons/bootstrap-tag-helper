@@ -1,14 +1,22 @@
-# Bootstrap Tag Helper (Bocons)
+# Bootstrap Tag Helper ([Bocons](https://www.brecons.net/Product/Bocons))
 
 ## About Bocons
-Bocons is a free Tag Helper Library for Bootstrap (Version 4.0.0) - the world's most popular mobile-first and responsive front-end framework.
+Bocons is a free tag helper library for Bootstrap (Version 4.0.0) - the world's most popular mobile-first and responsive front-end framework.
+Bocons is one of a [Brecons](https://www.brecons.net) product and provides components and controls to use in a ASP.NET Core web application.
 
 ## Compatibility and Requirements
 | Target Framework | Version | Target Framework Moniker (TFM) | Support |
 | -------- | :----: | :----------: | :---------------: |
 | .NET Standard | 2.0 | `netstandard2.0` | Supported |
+| .NET Standard | 1.6 | `netstandard1.6` | Not Supported |
+| .NET Core Application | 2.0 | `netcoreapp2.0` | Supported |
+| .NET Core Application | 1.0 | `netcoreapp1.0` | Not Supported |
 
 ## Getting Started
+Coming up soon.
+
+## Documentation
+For complete a Bocons documentation, please visit [https://www.brecons.net/Documentation/Bocons](https://www.brecons.net/Documentation/Bocons)
 
 ## Release Notes
 For change logs and release notes, see the [online change logs at brecons.net](https://www.brecons.net/Documentation/Bocons/ChangeLog)
