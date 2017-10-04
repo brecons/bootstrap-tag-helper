@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>2.1.0</Version>
+    <Authors>Timm Bremus</Authors>
+    <Company>Bremus Solutions</Company>
+    <Product>Bremus Solutions Bocons</Product>
+    <Description>A free Tag Helper Library for Bootstrap (Version 4.0.0) - the world's most popular mobile-first and responsive front-end framework.</Description>
+    <Copyright>Copyright © Bremus Solutions</Copyright>
+    <PackageLicenseUrl>https://www.brecons.net/Product/BoconsLicense</PackageLicenseUrl>
+    <PackageProjectUrl>https://www.brecons.net/Product/Bocons</PackageProjectUrl>
+    <PackageIconUrl>http://nuget.bremus-solutions.de/package-logo.png</PackageIconUrl>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>aspnetcore aspnetcoremvc taghelper taghelpers tag helpers bootstrap brecons bocons</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
