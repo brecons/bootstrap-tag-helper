@@ -1,0 +1,36 @@
+{
+  "name": "jquery-validation-unobtrusive-bootstrap",
+  "description": "jQuery Unobtrusive Validation for Bootstrap v4.x",
+  "version": "2.0.0",
+  "license": "MIT",
+  "main": "dist/unobtrusive-bootstrap.js",
+  "homepage": "https://www.brecons.net/",
+  "authors": [
+    "Timm Bremus <t.bremus@bremus-solutions.de>"
+  ],
+  "keywords": [
+    "jquery",
+    "asp.net",
+    "mvc",
+    "validation",
+    "unobtrusive",
+    "bootstrap"
+  ],
+  "ignore": [
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "jquery": "3.2.1",
+    "jquery-validation": "1.17.0",
+    "jquery-validation-unobtrusive": "3.2.6"
+  }
+}

@@ -1,0 +1,24 @@
+﻿@model BSolutions.Bocons.Test.Models.Forms.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<container>
+    <row>
+        <column>
+            <form asp-action="Register" bc-validation="true">
+                <form-group>
+                    <input type="text" asp-for="Name" />
+                </form-group>
+                <form-group>
+                    <input type="email" asp-for="Email" />
+                </form-group>
+                <form-group>
+                    <select asp-for="Country" asp-items="Model.Countries"></select>
+                </form-group>
+
+                <button type="submit">Submit</button>
+            </form>
+        </column>
+    </row>
+</container>

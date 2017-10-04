@@ -1,0 +1,149 @@
+﻿@{
+    ViewData["Title"] = "List Group";
+}
+
+<container>
+    <row class="mt-4">
+        <column>
+            <h2>List Group</h2>
+            <list-group>
+                <list-group-item bc-badge="23">List Group Item 1</list-group-item>
+                <list-group-item bc-badge="43" bc-badge-color="Primary">List Group Item 2</list-group-item>
+            </list-group>
+        </column>
+        <column>
+            <h2>Link Group</h2>
+            <list-group>
+                <list-group-link href="#" bc-active="true">List Group Item 1</list-group-link>
+                <list-group-link href="#">List Group Item 2</list-group-link>
+                <list-group-link href="#">List Group Item 3</list-group-link>
+                <list-group-link href="#" bc-disable="true">List Group Item 4</list-group-link>
+            </list-group>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h2>Button Group</h2>
+            <list-group>
+                <list-group-button type="button">List Group Item 1</list-group-button>
+                <list-group-button type="button">List Group Item 2</list-group-button>
+                <list-group-button type="button">List Group Item 3</list-group-button>
+                <list-group-button type="button">List Group Item 4</list-group-button>
+            </list-group>
+        </column>
+        <column></column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h2>Contextual Link Group</h2>
+            <list-group>
+                <list-group-item bc-color="Primary">List Group Item 1</list-group-item>
+                <list-group-item bc-color="Secondary">List Group Item 2</list-group-item>
+                <list-group-item bc-color="Success">List Group Item 3</list-group-item>
+                <list-group-item bc-color="Danger">List Group Item 4</list-group-item>
+                <list-group-item bc-color="Warning">List Group Item 4</list-group-item>
+                <list-group-item bc-color="Info">List Group Item 4</list-group-item>
+                <list-group-item bc-color="Light">List Group Item 4</list-group-item>
+                <list-group-item bc-color="Dark">List Group Item 4</list-group-item>
+            </list-group>
+        </column>
+        <column>
+            <h2>Contextual Button Group</h2>
+            <list-group>
+                <list-group-button type="button" bc-color="Primary" bc-badge="34" bc-badge-color="Danger">List Group Item 1</list-group-button>
+                <list-group-button type="button" bc-color="Secondary">List Group Item 2</list-group-button>
+                <list-group-button type="button" bc-color="Success">List Group Item 3</list-group-button>
+                <list-group-button type="button" bc-color="Danger">List Group Item 4</list-group-button>
+                <list-group-button type="button" bc-color="Warning">List Group Item 4</list-group-button>
+                <list-group-button type="button" bc-color="Info">List Group Item 4</list-group-button>
+                <list-group-button type="button" bc-color="Light">List Group Item 4</list-group-button>
+                <list-group-button type="button" bc-color="Dark">List Group Item 4</list-group-button>
+            </list-group>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h2>Contextual Link Group</h2>
+            <list-group>
+                <list-group-link href="#" bc-active="true" class="flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </list-group-link>
+                <list-group-link href="#" class="flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </list-group-link>
+                <list-group-link href="#" class="flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </list-group-link>
+            </list-group>
+        </column>
+        <column></column>
+    </row>
+</container>
+
+@*<row>
+    <column md-size="6">
+        <h2>Button Group</h2>
+        <list-group>
+            <list-group-button type="button">List Group Item 1</list-group-button>
+            <list-group-button type="button">List Group Item 2</list-group-button>
+            <list-group-button type="button">List Group Item 3</list-group-button>
+            <list-group-button type="button">List Group Item 4</list-group-button>
+        </list-group>
+    </column>
+    <column md-size="6">
+        <h2>Contextual</h2>
+        <list-group>
+            <list-group-button type="button" bc-color="Success">List Group Item 1</list-group-button>
+            <list-group-button type="button" bc-color="Info">List Group Item 2</list-group-button>
+            <list-group-button type="button" bc-color="Warning">List Group Item 3</list-group-button>
+            <list-group-button type="button" bc-color="Danger">List Group Item 4</list-group-button>
+        </list-group>
+    </column>
+</row>
+<row>
+    <column md-size="6">
+        <h2>Disabled</h2>
+        <list-group>
+            <list-group-button type="button">List Group Item 1</list-group-button>
+            <list-group-button type="button" bc-disable="true">List Group Item 2</list-group-button>
+            <list-group-button type="button">List Group Item 3</list-group-button>
+            <list-group-button type="button">List Group Item 4</list-group-button>
+        </list-group>
+    </column>
+    <column md-size="6">
+        <h2>Custom Content</h2>
+        <list-group>
+            <list-group-link>
+                <h4>List Group Item 1</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </list-group-link>
+            <list-group-link>
+                <h4>List Group Item 2</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </list-group-link>
+            <list-group-link bc-active="true">
+                <h4>List Group Item 3</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </list-group-link>
+            <list-group-link>
+                <h4>List Group Item 4</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </list-group-link>
+        </list-group>
+    </column>
+</row>*@

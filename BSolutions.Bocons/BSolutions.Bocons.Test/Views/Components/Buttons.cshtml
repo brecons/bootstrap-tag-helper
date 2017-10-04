@@ -1,0 +1,231 @@
+﻿@{
+    ViewData["Title"] = "Alerts";
+}
+
+<container>
+    <row class="mt-4">
+        <column>
+            <h4>Buttons</h4>
+            <button type="button" bc-color="Primary">Primary</button>
+            <button type="button" bc-color="Secondary">Secondary</button>
+            <button type="button" bc-color="Success">Success</button>
+            <button type="button" bc-color="Danger">Danger</button>
+            <button type="button" bc-color="Warning">Warning</button>
+            <button type="button" bc-color="Info">Info</button>
+            <button type="button" bc-color="Light">Light</button>
+            <button type="button" bc-color="Dark">Dark</button>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Link Buttons</h4>
+            <a bc-button="true" href=# bc-color="Primary">Primary</a>
+            <a bc-button="true" href=# bc-color="Secondary">Secondary</a>
+            <a bc-button="true" href=# bc-color="Success">Success</a>
+            <a bc-button="true" href=# bc-color="Danger">Danger</a>
+            <a bc-button="true" href=# bc-color="Warning">Warning</a>
+            <a bc-button="true" href=# bc-color="Info">Info</a>
+            <a bc-button="true" href=# bc-color="Light">Light</a>
+            <a bc-button="true" href=# bc-color="Dark">Dark</a>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Input Buttons</h4>
+            <input type="button" value="Primary" />
+            <input type="button" value="Secondary" />
+            <input type="button" value="Success" />
+            <input type="button" value="Danger" />
+            <input type="button" value="Warning" />
+            <input type="button" value="Info" />
+            <input type="button" value="Light" />
+            <input type="button" value="Dark" />
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Outline Buttons</h4>
+            <button type="button" bc-color="Primary" bc-outline="true">Primary</button>
+            <button type="button" bc-color="Secondary" bc-outline="true">Secondary</button>
+            <button type="button" bc-color="Success" bc-outline="true">Success</button>
+            <button type="button" bc-color="Danger" bc-outline="true">Danger</button>
+            <button type="button" bc-color="Warning" bc-outline="true">Warning</button>
+            <button type="button" bc-color="Info" bc-outline="true">Info</button>
+            <button type="button" bc-color="Light" bc-outline="true">Light</button>
+            <button type="button" bc-color="Dark" bc-outline="true">Dark</button>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Block</h4>
+            <button type="button" bc-block="true" bc-color="Primary">Block level button</button>
+            <button type="button" bc-block="true" bc-color="Secondary">Block level button</button>
+        </column>
+        <column>
+            <h4>Size</h4>
+            <button type="button" bc-size="Large">Large button</button>
+            <button type="button">Default button</button>
+            <button type="button" bc-size="Small">Small button</button>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Dropdown</h4>
+            <button-dropdown bc-title="Primary">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Secondary" bc-color="Secondary">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Success" bc-color="Success">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Danger" bc-color="Danger">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Warning" bc-color="Warning" bc-size="Large">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Info" bc-color="Info" bc-size="Large">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Light" bc-color="Light" bc-size="Small">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Dark" bc-color="Dark" bc-size="Small">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Split</h4>
+            <button-dropdown bc-title="Split" bc-split="true">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Split" bc-color="Secondary" bc-split="true">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Split" bc-color="Success" bc-split="true">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Split" bc-color="Danger" bc-split="true">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Split" bc-color="Warning" bc-split="true" bc-size="Large">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Split" bc-color="Info" bc-split="true" bc-size="Large">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Split" bc-color="Light" bc-split="true" bc-size="Small">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+            <button-dropdown bc-title="Split" bc-color="Dark" bc-split="true" bc-size="Small">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Alignment</h4>
+            <button-dropdown bc-title="Dropdown Button with long Title" bc-alignment-right="true">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <a href="#">Another Action</a>
+            </button-dropdown>
+        </column>
+        <column>
+            <h4>Divider</h4>
+            <button-dropdown bc-title="Dropdown Button" bc-alignment-right="true">
+                <a href="#">Action</a>
+                <a href="#" bc-disabled="true">Disabled Action</a>
+                <divider />
+                <a href="#">Another Action</a>
+            </button-dropdown>
+        </column>
+        <column>
+            <h4>Header</h4>
+            <button-dropdown bc-title="Account" bc-alignment-right="true">
+                <a href="#">My Orders</a>
+                <header>Account Settings</header>
+                <a href="#">Change Password</a>
+                <a href="#">Privacy</a>
+                <divider />
+                <a href="#">Log out</a>
+            </button-dropdown>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Button Group</h4>
+            <button-group bc-size="Small">
+                <button>Left</button>
+                <button>Middle</button>
+                <button>Right</button>
+            </button-group>
+            <button-group>
+                <button>Left</button>
+                <button>Middle</button>
+                <button>Right</button>
+            </button-group>
+            <button-group bc-size="Large">
+                <button>Left</button>
+                <button>Middle</button>
+                <button>Right</button>
+            </button-group>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <h4>Button Group (vertical)</h4>
+            <button-group bc-vertical="true" bc-size="Small">
+                <button>Top</button>
+                <button>Middle</button>
+                <button>Bottom</button>
+            </button-group>
+            <button-group bc-vertical="true">
+                <button>Top</button>
+                <button>Middle</button>
+                <button>Bottom</button>
+            </button-group>
+            <button-group bc-vertical="true" bc-size="Large">
+                <button>Top</button>
+                <button>Middle</button>
+                <button>Bottom</button>
+            </button-group>
+        </column>
+    </row>
+</container>

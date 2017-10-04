@@ -1,108 +1,190 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@section Scripts {
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
+<container>
+    <row class="mt-4">
+        <column>
+            <jumbotron bc-fluid="true">
+                <h1 class="display-3">Hello, world!</h1>
+                <p class="lead">
+                    This is a simple hero unit, a simple jumbotron-style component
+                    for calling extra attention to featured content or information.
                 </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
+                <hr class="my-4">
                 <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
+                    It uses utility classes for typography and spacing to space content
+                    out within the larger container.
                 </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
+                <p class="lead">
+                    <a bc-button="true" bc-size="Large" href="#">Learn more</a>
                 </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+            </jumbotron>
+        </column>
+    </row>
+    <h4 class="mt-4">Modal Dialog</h4>
+    <row class="mt-4">
+        <column>
+            <modal bc-toggle-text="Launch Modal Dialog" bc-header="Modal Dialog 1">
+                <modal-body>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </modal-body>
+                <modal-footer>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </modal-footer>
+            </modal>
+        </column>
+        <column>
+            <modal bc-toggle-text="Launch Modal Dialog">
+                <modal-header>
+                    <h3>Modal title</h3>
+                </modal-header>
+                <modal-body>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </modal-body>
+                <modal-footer>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </modal-footer>
+            </modal>
+        </column>
+        <column>
+            <modal bc-toggle-text="Launch small Modal Dialog" bc-header="Modal Dialog 1" bc-size="Small">
+                <modal-body>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </modal-body>
+                <modal-footer>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </modal-footer>
+            </modal>
+        </column>
+        <column>
+            <modal bc-toggle-text="Launch large Modal Dialog" bc-size="Large">
+                <modal-header>
+                    <h3>Modal title</h3>
+                </modal-header>
+                <modal-body>
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </modal-body>
+                <modal-footer>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </modal-footer>
+            </modal>
+        </column>
+    </row>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>
+    <h4 class="mt-4">Popovers</h4>
+    <row class="mt-4">
+        <column>
+            <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." bc-popover-placement="Top">Popover on top</button>
+        </column>
+        <column>
+            <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." bc-popover-placement="Bottom">Popover on bottom</button>
+        </column>
+        <column>
+            <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." bc-popover-placement="Right">Popover on right</button>
+        </column>
+        <column>
+            <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." bc-popover-placement="Left">Popover on left</button>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." bc-popover-title="Popover on top" bc-popover-placement="Top">Popover with title</button>
+        </column>
+        <column>
+            <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." bc-popover-title="Popover on bottom" bc-popover-placement="Top" bc-popover-dismissible="true">Popover is dismissible</button>
+        </column>
+        <column>
+            <button type="button" bc-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." bc-popover-title="Popover on bottom" bc-popover-placement="Top" bc-popover-dismissible="true" bc-popover-delay="1000">Popover with deplay</button>
+        </column>
+        <column>
+        </column>
+    </row>
+    <h4 class="mt-4">Tooltips</h4>
+    <row class="mt-4">
+        <column>
+            <button type="button" bc-tooltip="Tooltip on top">Tooltip on top</button>
+        </column>
+        <column>
+            <button type="button" bc-tooltip="Tooltip on right" bc-tooltip-placement="Right">Tooltip on right</button>
+        </column>
+        <column>
+            <button type="button" bc-tooltip="Tooltip on bottom" bc-tooltip-placement="Bottom">Tooltip on bottom</button>
+        </column>
+        <column>
+            <button type="button" bc-tooltip="Tooltip on left" bc-tooltip-placement="Left">Tooltip on left</button>
+        </column>
+        <column>
+            <button type="button" bc-tooltip="<em>Tooltip</em> <u>with</u> <b>HTML</b>" bc-tooltip-html="true">Tooltip with HTML</button>
+        </column>
+    </row>
+    <h4 class="mt-4">Pagination</h4>
+    <row class="mt-4">
+        <column>
+            <pagination bc-size="Large">
+                <pagination-item href="#">1</pagination-item>
+                <pagination-item href="#" bc-disable="true">2</pagination-item>
+                <pagination-item href="#">3</pagination-item>
+            </pagination>
+
+            <pagination bc-previous-text="Previous" bc-previous-href="javascript: app.previous();">
+                <pagination-item href="#" bc-active="true">1</pagination-item>
+                <pagination-item href="#">2</pagination-item>
+                <pagination-item href="#">3</pagination-item>
+            </pagination>
+        </column>
+        <column>
+            <pagination bc-size="Large" bc-previous-text="Previous" bc-next-text="Next">
+                <pagination-item href="#">1</pagination-item>
+                <pagination-item href="#">2</pagination-item>
+                <pagination-item href="#">3</pagination-item>
+            </pagination>
+        </column>
+        <column>
+            <pagination bc-size="Small">
+                <pagination-item href="#">1</pagination-item>
+                <pagination-item href="#">2</pagination-item>
+                <pagination-item href="#" bc-active="true">3</pagination-item>
+            </pagination>
+        </column>
+    </row>
+    <row>
+        <column>
+            <pagination>
+                <pagination-item href="#">1</pagination-item>
+                <pagination-item href="#">2</pagination-item>
+                <pagination-item href="#">3</pagination-item>
+            </pagination>
+        </column>
+    </row>
+    <row>
+        <column>
+            <pagination bc-alignment="Center">
+                <pagination-item href="#">1</pagination-item>
+                <pagination-item href="#">2</pagination-item>
+                <pagination-item href="#">3</pagination-item>
+            </pagination>
+        </column>
+    </row>
+    <row>
+        <column>
+            <pagination bc-alignment="Right">
+                <pagination-item href="#">1</pagination-item>
+                <pagination-item href="#">2</pagination-item>
+                <pagination-item href="#">3</pagination-item>
+            </pagination>
+        </column>
+    </row>
+</container>
