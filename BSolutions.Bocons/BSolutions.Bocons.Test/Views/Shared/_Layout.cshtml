@@ -1,42 +1,52 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@ViewData["Title"] - BSolutions.Bocons.Test</title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/custom.min.css" />
+
+    @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">BSolutions.Bocons.Test</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <navbar bc-brand-text="Bocons" bc-brand-image="~/images/bootstrap-solid.svg">
+        <navbar-nav>
+            <navbar-link href="/" bc-active="true">Home</navbar-link>
+            <navbar-dropdown bc-title="Layout">
+                <navbar-link href="/Layout/GridSystem">Grid System</navbar-link>
+                <navbar-link href="/Layout/MediaObject">Media Object</navbar-link>
+            </navbar-dropdown>
+            <navbar-dropdown bc-title="Content">
+                <navbar-link href="/Content/Images">Images</navbar-link>
+                <navbar-link href="/Content/Tables">Tables</navbar-link>
+                <navbar-link href="/Content/Figures">Figures</navbar-link>
+            </navbar-dropdown>
+            <navbar-dropdown bc-title="Components">
+                <navbar-link href="/Components/Alerts">Alerts</navbar-link>
+                <navbar-link href="/Components/Badge">Badge</navbar-link>
+                <navbar-link href="/Components/Breadcrumb">Breadcrumb</navbar-link>
+                <navbar-link href="/Components/Buttons">Buttons</navbar-link>
+                <navbar-link href="/Components/Card">Card</navbar-link>
+                <navbar-link href="/Components/Carousel">Carousel</navbar-link>
+                <navbar-link href="/Components/ListGroup">List Group</navbar-link>
+                <navbar-link href="/Components/Progress">Progress</navbar-link>
+                <navbar-link href="/Components/Tabs">Tabs</navbar-link>
+            </navbar-dropdown>
+            <navbar-dropdown bc-title="Forms">
+                <navbar-link href="/Forms/Index">Controls</navbar-link>
+                <navbar-link href="/Forms/Validation">Validation</navbar-link>
+            </navbar-dropdown>
+        </navbar-nav>
+        <navbar-form class="mx-4">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </navbar-form>
+        <navbar-text>Signed in as <a href="#" class="navbar-link">Mark Otto</a></navbar-text>
+    </navbar>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -45,26 +55,13 @@
         </footer>
     </div>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+    <script src="~/lib/jquery/dist/jquery.slim.min.js" type="text/javascript"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive-bootstrap/dist/unobtrusive-bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

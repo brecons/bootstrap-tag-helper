@@ -1,0 +1,62 @@
+﻿@using BSolutions.Bocons.Test.Models.Forms
+@model BSolutions.Bocons.Test.Models.Forms.ValidationViewModel
+@{
+    ViewData["Title"] = "Validation";
+}
+
+<container>
+    <row>
+        <column>
+            <form asp-action="Validation" bc-horizontal="true" bc-label-width-xs="4" bc-validation="true">
+                <form-group>
+                    <input type="text" bc-static="true" asp-for="UserName" />
+                </form-group>
+                <form-group>
+                    <input type="email" asp-for="Email" />
+                </form-group>
+                <form-group>
+                    <input type="text" asp-for="Name" />
+                </form-group>
+                <form-group>
+                    <radio-list bc-label="Gender" bc-inline="true">
+                        @foreach (Gender gender in Enum.GetValues(typeof(Gender)))
+                        {
+                            <input asp-for="Gender" type="radio" bc-label="@gender" value="@gender" />
+                        }
+                    </radio-list>
+                </form-group>
+                <form-group>
+                    <checkbox-list bc-label="Options">
+                        <input type="checkbox" bc-label="Option one" />
+                        <input type="checkbox" bc-label="Option two" />
+                    </checkbox-list>
+                </form-group>
+                <form-group>
+                    <checkbox-list bc-label="Interests">
+                        @for(int i = 0; i <= Model.Interests.Count - 1; i++)
+                        {
+                            <input type="hidden" asp-for="Interests[i].Value" />
+                            <input type="hidden" asp-for="Interests[i].Text" />
+                            <input type="checkbox" asp-for="Interests[i].Selected" bc-label="@Model.Interests[i].Text" class="form-check-input" />
+                        }
+                    </checkbox-list>
+                </form-group>
+                <form-group>
+                    <select asp-for="BodyType" asp-items="Model.BodyTypes"></select>
+                    <span asp-validation-for="BodyType"></span>
+                </form-group>
+                <form-group>
+                    <input type="date" asp-for="Birthday" />
+                </form-group>
+                <form-group>
+                    <textarea asp-for="Vita"></textarea>
+                </form-group>
+                <form-group>
+                    <input type="checkbox" asp-for="LicenseAgreed" class="form-check-input" />
+                </form-group>
+
+                <button type="submit">Submit</button>
+            </form>
+        </column>
+    </row>
+</container>

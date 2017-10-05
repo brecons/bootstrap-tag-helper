@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Carousel";
+}
+
+<container>
+    <row class="mt-4">
+        <column>
+            <carousel>
+                <carousel-item bc-src="~/images/banner1.svg" bc-alt="Wald 1" bc-active="true"></carousel-item>
+                <carousel-item bc-src="~/images/banner2.svg" bc-alt="Wald 2"></carousel-item>
+                <carousel-item bc-src="~/images/banner3.svg" bc-alt="Wald 3"></carousel-item>
+            </carousel>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <carousel bc-controls="true">
+                <carousel-item bc-src="~/images/banner1.svg" bc-alt="Wald 1" bc-active="true"></carousel-item>
+                <carousel-item bc-src="~/images/banner2.svg" bc-alt="Wald 2"></carousel-item>
+                <carousel-item bc-src="~/images/banner3.svg" bc-alt="Wald 3"></carousel-item>
+            </carousel>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <carousel bc-controls="true" bc-indicators="true">
+                <carousel-item bc-src="~/images/banner1.svg" bc-alt="Wald 1" bc-active="true"></carousel-item>
+                <carousel-item bc-src="~/images/banner2.svg" bc-alt="Wald 2"></carousel-item>
+                <carousel-item bc-src="~/images/banner3.svg" bc-alt="Wald 3"></carousel-item>
+            </carousel>
+        </column>
+    </row>
+    <row class="mt-4">
+        <column>
+            <carousel bc-controls="true" bc-indicators="true">
+                <carousel-item bc-src="~/images/banner1.svg" bc-alt="Wald 1" bc-active="true">
+                    <h3>First Slide Label</h3>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    </p>
+                </carousel-item>
+                <carousel-item bc-src="~/images/banner2.svg" bc-alt="Wald 2">
+                    <h3>Second Slide Label</h3>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    </p>
+                </carousel-item>
+                <carousel-item bc-src="~/images/banner3.svg" bc-alt="Wald 3">
+                    <h3>Third Slide Label</h3>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    </p>
+                </carousel-item>
+            </carousel>
+        </column>
+    </row>
+</container>

@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Grid System";
+}
+
+<div class="bocons-demo">
+    <h2>Auto-layout columns</h2>
+    <container>
+        <row>
+            <column>1 of 2</column>
+            <column>2 of 2</column>
+        </row>
+        <row>
+            <column>1 of 3</column>
+            <column>2 of 3</column>
+            <column>3 of 3</column>
+        </row>
+    </container>
+
+    <h2>Setting one column width</h2>
+    <container>
+        <row>
+            <column>1 of 3</column>
+            <column xs-size="6">2 of 3 (wider)</column>
+            <column>2 of 3</column>
+        </row>
+        <row>
+            <column>1 of 3</column>
+            <column xs-size="5">2 of 3 (wider)</column>
+            <column>3 of 3</column>
+        </row>
+    </container>
+
+    <h2>Variable width content</h2>
+    <container>
+        <row>
+            <column>1 of 3</column>
+            <column md-render="Dynamic">Variable width content</column>
+            <column>2 of 3</column>
+        </row>
+        <row>
+            <column>1 of 3</column>
+            <column xl-render="Dynamic">Variable width content Variable width content Variable width content Variable width content</column>
+            <column>3 of 3</column>
+        </row>
+    </container>
+
+    <h2>Stacked to horizontal</h2>
+    <container>
+        <row>
+            <column sm-size="8">col-sm-8</column>
+            <column sm-size="4">col-sm-4</column>
+        </row>
+        <row>
+            <column sm-render="Auto">col-sm</column>
+            <column sm-render="Auto">col-sm</column>
+            <column sm-render="Auto">col-sm</column>
+        </row>
+    </container>
+
+    <h2>Vertical Alignment</h2>
+    <container>
+        <row vertical-alignment="Top" style="height: 10rem; background-color: rgba(255, 0, 0, .1)">
+            <column>One of three columns</column>
+            <column>One of three columns</column>
+            <column>One of three columns</column>
+        </row>
+        <row vertical-alignment="Middle" style="height: 10rem; background-color: rgba(255, 0, 0, .1); margin-top: 1rem;">
+            <column>One of three columns</column>
+            <column>One of three columns</column>
+            <column>One of three columns</column>
+        </row>
+        <row vertical-alignment="Bottom" style="height: 10rem; background-color: rgba(255, 0, 0, .1); margin-top: 1rem;">
+            <column>One of three columns</column>
+            <column>One of three columns</column>
+            <column>One of three columns</column>
+        </row>
+        <row style="height: 10rem; background-color: rgba(255, 0, 0, .1); margin-top: 1rem;">
+            <column vertical-alignment="Top">One of three columns</column>
+            <column vertical-alignment="Middle">One of three columns</column>
+            <column vertical-alignment="Bottom">One of three columns</column>
+        </row>
+    </container>
+
+    <h2>Horizontal Column Alignment</h2>
+    <container>
+        <row alignment="Left">
+            <column xs-size="4">One of two columns</column>
+            <column xs-size="4">One of two columns</column>
+        </row>
+        <row alignment="Center" style="margin-top: 1rem;">
+            <column xs-size="4">One of two columns</column>
+            <column xs-size="4">One of two columns</column>
+        </row>
+        <row alignment="Right" style="margin-top: 1rem;">
+            <column xs-size="4">One of two columns</column>
+            <column xs-size="4">One of two columns</column>
+        </row>
+        <row alignment="Around" style="margin-top: 1rem;">
+            <column xs-size="4">One of two columns</column>
+            <column xs-size="4">One of two columns</column>
+        </row>
+        <row alignment="Between" style="margin-top: 1rem;">
+            <column xs-size="4">One of two columns</column>
+            <column xs-size="4">One of two columns</column>
+        </row>
+    </container>
+
+    <h2>Reordering</h2>
+    <container>
+        <row>
+            <column>First, but unordered</column>
+            <column xs-order="12">Second, but last</column>
+            <column xs-order="1">Third, but first</column>
+        </row>
+    </container>
+
+    <h2>Nesting</h2>
+    <container>
+        <row>
+            <column sm-size="9">
+                Level 1: col-sm-9
+                <row>
+                    <column sm-size="6">col-sm-6</column>
+                    <column sm-size="6">col-sm-6</column>
+                </row>
+            </column>
+        </row>
+    </container>
+</div>
+
