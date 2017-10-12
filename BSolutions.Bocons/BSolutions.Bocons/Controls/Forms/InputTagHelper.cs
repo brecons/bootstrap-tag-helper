@@ -1,6 +1,7 @@
 ﻿namespace BSolutions.Bocons.Controls.Forms
 {
     using BSolutions.Bocons.Rendering;
+    using BSolutions.Brecons.Core;
     using BSolutions.Brecons.Core.Attributes.Controls;
     using BSolutions.Brecons.Core.Enumerations;
     using BSolutions.Brecons.Core.Extensions;
@@ -49,17 +50,17 @@
             this.BindProperty(context);
             
             // Radio or Checkbox
-            if(BoconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
+            if(BreconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderCheckControl(output);
             }
             // Button
-            else if(BoconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
+            else if(BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderButtonControl(output);
             }
             // Input
-            else if (BoconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
+            else if (BreconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderTextControl(output);
             }
