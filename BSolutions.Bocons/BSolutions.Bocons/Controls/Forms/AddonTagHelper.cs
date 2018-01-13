@@ -10,17 +10,22 @@
     [OutputElementHint("span")]
     public class AddonTagHelper : BreconsTagHelperBase
     {
+        private const string AppendAttributeName = AttributePrefix + "append";
+
+        [HtmlAttributeName(AppendAttributeName)]
+        public bool IsAppend { get; set; }
+
         protected override void RenderProcess(TagHelperContext context, TagHelperOutput output)
         {
-            output.TagName = "span";
-            output.AddCssClass("input-group-addon");
+            output.TagName = "div";
+            output.AddCssClass(this.IsAppend ? "input-group-append" : "input-group-prepend");
         }
 
-        public static IHtmlContent Build(string text)
+        public static IHtmlContent Build(string text, bool isAppend)
         {
-            TagBuilder addon = new TagBuilder("span");
-            addon.AddCssClass("input-group-addon");
-            addon.InnerHtml.Append(text);
+            TagBuilder addon = new TagBuilder("div");
+            addon.AddCssClass(isAppend ? "input-group-append" : "input-group-prepend");
+            addon.InnerHtml.AppendHtml($"<span class=\"input-group-text\">{text}</span>");
 
             return addon;
         }
