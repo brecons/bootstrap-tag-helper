@@ -25,17 +25,7 @@
         protected override void RenderProcess(TagHelperContext context, TagHelperOutput output)
         {
             // Theme
-            switch(this.Theme)
-            {
-                case Theme.Dark:
-                    output.AddCssClass("thead-inverse");
-                    break;
-                case Theme.Light:
-                    output.AddCssClass("thead-default");
-                    break;
-            }
-
-            
+            output.AddCssClass(this.Theme != Theme.Default ? $"thead-{this.Theme.GetEnumInfo().Name}" : string.Empty);
         }
     }
 }
