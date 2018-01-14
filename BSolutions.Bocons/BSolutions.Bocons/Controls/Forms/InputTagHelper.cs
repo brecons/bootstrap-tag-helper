@@ -82,10 +82,8 @@
             // Label
             if (!string.IsNullOrEmpty(this.Label))
             {
-                output.PostElement.Append($" {this.Label}");
+                output.PostElement.AppendHtml($"<label class\"form-check-label\" for=\"{this.Id}\">{this.Label}</label>");
             }
-
-            output.WrapHtmlOutside("<label class=\"form-check-label\">", "</label>"); 
 
             // Form Check
             TagBuilder check = new TagBuilder("div");
