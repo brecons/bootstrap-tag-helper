@@ -2,8 +2,20 @@
     ViewData["Title"] = "Grid System";
 }
 
+<style>
+    .row+.row {
+        margin-top: 1rem;
+    }
+    .row > .col, .row > [class^=col-] {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid rgba(86,61,124,.2);
+    }
+</style>
+
 <div class="bocons-demo">
-    <h2>Auto-layout columns</h2>
+    <h2 class="mt-4 mb-4">Auto-layout columns</h2>
     <container>
         <row>
             <column>1 of 2</column>
@@ -16,7 +28,7 @@
         </row>
     </container>
 
-    <h2>Setting one column width</h2>
+    <h2 class="mt-4 mb-4">Setting one column width</h2>
     <container>
         <row>
             <column>1 of 3</column>
@@ -30,7 +42,7 @@
         </row>
     </container>
 
-    <h2>Variable width content</h2>
+    <h2 class="mt-4 mb-4">Variable width content</h2>
     <container>
         <row>
             <column>1 of 3</column>
@@ -44,7 +56,7 @@
         </row>
     </container>
 
-    <h2>Stacked to horizontal</h2>
+    <h2 class="mt-4 mb-4">Stacked to horizontal</h2>
     <container>
         <row>
             <column sm-size="8">col-sm-8</column>
@@ -57,7 +69,7 @@
         </row>
     </container>
 
-    <h2>Vertical Alignment</h2>
+    <h2 class="mt-4 mb-4">Vertical Alignment</h2>
     <container>
         <row vertical-alignment="Top" style="height: 10rem; background-color: rgba(255, 0, 0, .1)">
             <column>One of three columns</column>
@@ -81,7 +93,7 @@
         </row>
     </container>
 
-    <h2>Horizontal Column Alignment</h2>
+    <h2 class="mt-4 mb-4">Horizontal Column Alignment</h2>
     <container>
         <row alignment="Left">
             <column xs-size="4">One of two columns</column>
@@ -105,7 +117,7 @@
         </row>
     </container>
 
-    <h2>Reordering</h2>
+    <h2 class="mt-4 mb-4">Reordering</h2>
     <container>
         <row>
             <column>First, but unordered</column>
@@ -114,7 +126,22 @@
         </row>
     </container>
 
-    <h2>Nesting</h2>
+    <h2 class="mt-4 mb-4">Offset</h2>
+    <container>
+        <row>
+            <column md-size="4">.col-md-4</column>
+            <column md-size="4" md-offset="4">.col-md-4 .offset-md-4</column>
+        </row>
+        <row>
+            <column md-size="3" md-offset="3">.col-md-3 .offset-md-3</column>
+            <column md-size="3" md-offset="3">.col-md-3 .offset-md-3</column>
+        </row>
+        <row>
+            <column md-size="6" md-offset="3">.col-md-6 .offset-md-3</column>
+        </row>
+    </container>
+
+    <h2 class="mt-4 mb-4">Nesting</h2>
     <container>
         <row>
             <column sm-size="9">

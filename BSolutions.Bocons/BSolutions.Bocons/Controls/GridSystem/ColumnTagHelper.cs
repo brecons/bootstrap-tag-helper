@@ -17,6 +17,11 @@
         private const string MdSizeAttributeName = "md-size";
         private const string LgSizeAttributeName = "lg-size";
         private const string XlSizeAttributeName = "xl-size";
+        private const string XsOffsetAttributeName = "xs-offset";
+        private const string SmOffsetAttributeName = "sm-offset";
+        private const string MdOffsetAttributeName = "md-offset";
+        private const string LgOffsetAttributeName = "lg-offset";
+        private const string XlOffsetAttributeName = "xl-offset";
         private const string XsRenderAttributeName = "xs-render";
         private const string SmRenderAttributeName = "sm-render";
         private const string MdRenderAttributeName = "md-render";
@@ -47,6 +52,21 @@
 
         [HtmlAttributeName(XlSizeAttributeName)]
         public int XlSize { get; set; }
+
+        [HtmlAttributeName(XsOffsetAttributeName)]
+        public int XsOffset { get; set; }
+
+        [HtmlAttributeName(SmOffsetAttributeName)]
+        public int SmOffset { get; set; }
+
+        [HtmlAttributeName(MdOffsetAttributeName)]
+        public int MdOffset { get; set; }
+
+        [HtmlAttributeName(LgOffsetAttributeName)]
+        public int LgOffset { get; set; }
+
+        [HtmlAttributeName(XlOffsetAttributeName)]
+        public int XlOffset { get; set; }
 
         [HtmlAttributeName(XsRenderAttributeName)]
         public GridColumnRenderType XsRender { get; set; } = GridColumnRenderType.Fixed;
@@ -89,6 +109,9 @@
 
             // Size
             this.ProceedSize(output);
+
+            // Offset
+            this.ProcessOffset(output);
 
             // Order
             this.ProceedOrder(output);
@@ -185,6 +208,39 @@
             if(classAttribute == null || !classAttribute.Value.ToString().Contains("col"))
             {
                 output.AddCssClass("col");
+            }
+        }
+
+        private void ProcessOffset(TagHelperOutput output)
+        {
+            // Extra Small Offset
+            if(this.XsOffset > 0 && this.XsOffset <= 12)
+            {
+                output.AddCssClass($"offset-{this.XsOffset}");
+            }
+
+            // Small Offset
+            if (this.SmOffset > 0 && this.SmOffset <= 12)
+            {
+                output.AddCssClass($"offset-sm-{this.SmOffset}");
+            }
+
+            // Medium Offset
+            if (this.MdOffset > 0 && this.MdOffset <= 12)
+            {
+                output.AddCssClass($"offset-md-{this.MdOffset}");
+            }
+
+            // Large Offset
+            if (this.LgOffset > 0 && this.LgOffset <= 12)
+            {
+                output.AddCssClass($"offset-lg-{this.LgOffset}");
+            }
+
+            // Extra Large Offset
+            if (this.XlOffset > 0 && this.XlOffset <= 12)
+            {
+                output.AddCssClass($"offset-xl-{this.XlOffset}");
             }
         }
 
