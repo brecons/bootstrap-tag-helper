@@ -132,7 +132,7 @@
             if (!string.IsNullOrEmpty(this.PostAddon) || !string.IsNullOrEmpty(this.PreAddon))
             {
                 // Input Group
-                output.PreElement.PrependHtml(this.Size != Size.Default ? "<div class=\"input-group input-group-lg\">" : "<div class=\"input-group\">");
+                output.PreElement.PrependHtml(this.Size != Size.Default ? $"<div class=\"input-group input-group-{this.Size.GetEnumInfo().Name}\">" : "<div class=\"input-group\">");
 
                 // Pre Addon
                 if (!string.IsNullOrEmpty(this.PreAddon))
