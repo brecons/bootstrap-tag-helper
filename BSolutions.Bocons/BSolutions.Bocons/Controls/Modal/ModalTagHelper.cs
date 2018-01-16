@@ -88,10 +88,6 @@
 
             // Dialog
             output.WrapContentOutside(this.BuildDialog());
-
-
-            //output.PreContent.AppendHtml($"<div class=\"{(this.Size != Size.Default ? $"modal-dialog modal-{this.Size.GetEnumInfo().Name}" : "modal-dialog")}\"><div class=\"modal-content\">{this.HeaderHtml}");
-            //output.PostContent.AppendHtml($"</div></div>");
         }
 
         private TagBuilder BuildDialog()

@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>2.1.0</Version>
+    <Version>2.1.1</Version>
     <Authors>Timm Bremus</Authors>
     <Company>Bremus Solutions</Company>
     <Product>Bocons - Bootstrap Tag Helper Library</Product>
