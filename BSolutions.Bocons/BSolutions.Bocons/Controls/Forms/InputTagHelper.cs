@@ -1,6 +1,7 @@
 ﻿namespace BSolutions.Bocons.Controls.Forms
 {
     using BSolutions.Bocons.Rendering;
+    using BSolutions.Brecons.Core;
     using BSolutions.Brecons.Core.Attributes.Controls;
     using BSolutions.Brecons.Core.Enumerations;
     using BSolutions.Brecons.Core.Extensions;
@@ -49,17 +50,17 @@
             this.BindProperty(context);
             
             // Radio or Checkbox
-            if(BoconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
+            if(BreconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderCheckControl(output);
             }
             // Button
-            else if(BoconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
+            else if(BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderButtonControl(output);
             }
             // Input
-            else if (BoconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
+            else if (BreconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderTextControl(output);
             }
@@ -81,10 +82,8 @@
             // Label
             if (!string.IsNullOrEmpty(this.Label))
             {
-                output.PostElement.Append($" {this.Label}");
+                output.PostElement.AppendHtml($"<label class\"form-check-label\" for=\"{this.Id}\">{this.Label}</label>");
             }
-
-            output.WrapHtmlOutside("<label class=\"form-check-label\">", "</label>"); 
 
             // Form Check
             TagBuilder check = new TagBuilder("div");
@@ -133,18 +132,18 @@
             if (!string.IsNullOrEmpty(this.PostAddon) || !string.IsNullOrEmpty(this.PreAddon))
             {
                 // Input Group
-                output.PreElement.PrependHtml(this.Size != Size.Default ? "<div class=\"input-group input-group-lg\">" : "<div class=\"input-group\">");
+                output.PreElement.PrependHtml(this.Size != Size.Default ? $"<div class=\"input-group input-group-{this.Size.GetEnumInfo().Name}\">" : "<div class=\"input-group\">");
 
                 // Pre Addon
                 if (!string.IsNullOrEmpty(this.PreAddon))
                 {
-                    output.PreElement.AppendHtml(AddonTagHelper.Build(this.PreAddon));
+                    output.PreElement.AppendHtml(AddonTagHelper.Build(this.PreAddon, false));
                 }
 
                 // Post Addon
                 if (!string.IsNullOrEmpty(this.PostAddon))
                 {
-                    output.PostElement.AppendHtml(AddonTagHelper.Build(this.PostAddon));
+                    output.PostElement.AppendHtml(AddonTagHelper.Build(this.PostAddon, true));
                 }
 
                 output.PostElement.AppendHtml("</div>");

@@ -3,33 +3,9 @@
 }
 
 <container>
-    <row class="mt-4">
-        <column>
-            <form>
-                <form-group>
-                    <input type="text" bc-label="User name" bc-help="Usually your e-mail address." />
-                </form-group>
-                <form-group>
-                    <input type="password" bc-label="Password" />
-                </form-group>
-                <button type="submit">Log in</button>
-            </form>
-        </column>
-        <column>
-            <form bc-horizontal="true" bc-label-width-xl="4">
-                <form-group>
-                    <input type="text" bc-label="User name" bc-help="Usually your e-mail address." />
-                </form-group>
-                <form-group>
-                    <input type="password" bc-label="Password" />
-                </form-group>
-                <button type="submit">Log in</button>
-            </form>
-        </column>
-    </row>
-    <row class="mt-4">
-        <column>
-            <h4>Vertical Form</h4>
+    <row class="mt-4" alignment="Center">
+        <column xs-size="8">
+            <h4 class="mb-4">Vertical Form</h4>
             <form>
                 <form-group>
                     <input type="text" bc-label="Username: " value="timm.bremus" bc-static="true" />
@@ -38,13 +14,7 @@
                     <input bc-label="E-mail address" bc-required="true" type="text" />
                 </form-group>
                 <form-group>
-                    <input type="password" placeholder="Enter password" bc-size="Large" />
-                </form-group>
-                <form-group>
                     <input type="password" placeholder="Enter password" />
-                </form-group>
-                <form-group>
-                    <input type="password" placeholder="Enter password" bc-size="Small" />
                 </form-group>
                 <form-group>
                     <select bc-label="Country" bc-help="Select your country where you live">
@@ -81,43 +51,11 @@
                 </form-group>
             </form>
         </column>
-        <column>
-            <h4>Vertical Form</h4>
-            <form>
-                <form-group>
-                    <input type="text" bc-label="Username" value="timm.bremus" bc-static="true" bc-size="Large" />
-                </form-group>
-                <form-group>
-                    <input type="text" bc-label="Email address" bc-help="We'll never share your email with anyone else." placeholder="Enter email address" bc-size="Large" />
-                </form-group>
-                <form-group>
-                    <input type="password" bc-label="Password" placeholder="Enter password" bc-size="Large" />
-                </form-group>
-                <form-group>
-                    <select bc-label="Country" bc-help="Select your country where you live" bc-size="Large">
-                        <option>Germany</option>
-                        <option>United States</option>
-                        <option>Spain</option>
-                    </select>
-                </form-group>
-                <form-group>
-                    <select bc-label="Interests" multiple bc-size="Large">
-                        <option>Swimming</option>
-                        <option>Painting</option>
-                        <option>Reading</option>
-                    </select>
-                </form-group>
-                <form-group>
-                    <textarea bc-label="Curriculum Vitae" bc-help="Describe the most important stations in your life" bc-size="Large"></textarea>
-                </form-group>
-                <form-group>
-                    <input type="file" bc-label="Profile Picture" bc-size="Large" />
-                </form-group>
-            </form>
-        </column>
     </row>
-    <row class="mt-4">
-        <column>
+    <hr />
+    <row class="mt-4" alignment="Center">
+        <column xs-size="8">
+            <h4 class="mb-4">Horizontal Form</h4>
             <form bc-horizontal="true" bc-label-width-xs="4" bc-label-width-sm="4">
                 <form-group>
                     <input type="text" bc-label="Username" value="timm.bremus" bc-static="true" />
@@ -163,126 +101,41 @@
             </form>
         </column>
     </row>
+    <hr />
+    <row class="mt-4" alignment="Center">
+        <column xs-size="8">
+            <form>
+                <h4 class="mb-4">Input Groups</h4>
+                <form-group>
+                    <input type="text" bc-pre-addon="@@" />
+                </form-group>
+                <form-group>
+                    <input type="text" bc-post-addon="@@example.com" />
+                </form-group>
+                <form-group>
+                    <input type="text" bc-pre-addon="$" bc-post-addon=".00" />
+                </form-group>
+
+                <h4 class="mt-4">Sizing</h4>
+                <form-group>
+                    <input type="text" bc-size="Small" bc-post-addon="@@example.com" placeholder="Small Input Group" />
+                </form-group>
+                <form-group>
+                    <input type="text" bc-post-addon="@@example.com" placeholder="Normal Input Group" />
+                </form-group>
+                <form-group>
+                    <input type="text" bc-size="Large" bc-post-addon="@@example.com" placeholder="Large Input Group" />
+                </form-group>
+                <form-group>
+                    <input type="text" bc-size="Small" placeholder="Small Input Group" />
+                </form-group>
+                <form-group>
+                    <input type="text" placeholder="Normal Input Group" />
+                </form-group>
+                <form-group>
+                    <input type="text" bc-size="Large" placeholder="Large Input Group" />
+                </form-group>
+            </form>
+        </column>
+    </row>
 </container>
-
-
-
-
-
-
-@*<div class="row" style="margin-top: 80px;">
-    <div class="col-md-6">
-        <h2>Vertical Form</h2>
-        <form>
-            <form-group bc-validation="ValidationType.Error" bc-validation-icons="true">
-                <input type="text" bc-help="Enter your name here" bc-label="Name" bc-size="Size.Large" />
-            </form-group>
-            <form-group>
-                <input type="text" bc-label="Gehalt" bc-pre-addon="$" bc-post-addon=".00" />
-            </form-group>
-            <form-group>
-                <select bc-label="Country" bc-help="Choose your country">
-                    <option>Germany</option>
-                    <option>Switzerland</option>
-                    <option>Austria</option>
-                </select>
-            </form-group>
-            <form-group>
-                <input type="checkbox" bc-label="Option 1" />
-            </form-group>
-            <form-group>
-                <input type="radio" bc-label="Option 1" />
-            </form-group>
-            <form-group>
-                <textarea bc-label="Beschreibung"></textarea>
-            </form-group>
-            <form-group>
-                <static bc-label="Username" bc-value="mmustermann" />
-            </form-group>
-        </form>
-    </div>
-    <div class="col-md-6">
-        <h2>Horizontal Form</h2>
-        <form bc-horizontal="true" bc-label-width-lg="3">
-            <form-group>
-                <input type="text" bc-help="Enter your name here" bc-label="Name" bc-size="Size.Small" />
-            </form-group>
-            <form-group>
-                <input type="text" bc-label="Salary" bc-pre-addon="$" bc-post-addon=".00" />
-            </form-group>
-            <form-group>
-                <select bc-label="Country" bc-help="Choose your country">
-                    <option>Germany</option>
-                    <option>Switzerland</option>
-                    <option>Austria</option>
-                </select>
-            </form-group>
-            <form-group>
-                <checkbox-list bc-inline="true" bc-label="Inline Checkboxes">
-                    <input type="checkbox" bc-label="Option 1" />
-                    <input type="checkbox" bc-label="Option 2" />
-                    <input type="checkbox" bc-label="Option 3" />
-                </checkbox-list>
-            </form-group>
-            <form-group>
-                <radio-list bc-label="Radios">
-                    <input type="radio" bc-label="Option 1" />
-                    <input type="radio" bc-label="Option 2" />
-                    <input type="radio" bc-label="Option 3" />
-                </radio-list>
-            </form-group>
-            <form-group>
-                <textarea bc-label="Beschreibung" bc-help="Describe the employee"></textarea>
-            </form-group>
-            <form-group>
-                <static bc-label="Username" bc-value="mmustermann" />
-            </form-group>
-        </form>
-    </div>
-    <column md-size="6">
-        <h2>Basic Controls</h2>
-        <form>
-            <form-group>
-                <input type="text" bc-label="Name" />
-            </form-group>
-            <form-group>
-                <select bc-label="Country">
-                    <option>Germany</option>
-                    <option>Switzerland</option>
-                    <option>Austria</option>
-                </select>
-            </form-group>
-            <form-group>
-                <checkbox-list>
-                    <input type="checkbox" bc-inline="true" bc-label="Option 1" />
-                    <input type="checkbox" bc-inline="true" bc-label="Option 2" />
-                </checkbox-list>
-            </form-group>
-            <form-group>
-                <radio-list>
-                    <input type="radio" bc-label="Option 1" />
-                    <input type="radio" bc-label="Option 2" />
-                </radio-list>
-                
-            </form-group>
-            <form-group>
-                <checkbox-list bc-inline="true">
-                    <input type="checkbox" bc-label="Option 1" />
-                    <input type="checkbox" bc-label="Option 2" />
-                </checkbox-list>
-            </form-group>
-            <form-group>
-                <radio-list bc-inline="true">
-                    <input type="radio" bc-label="Option 1" />
-                    <input type="radio" bc-label="Option 2" />
-                </radio-list>
-            </form-group>
-            <form-group>
-                <textarea bc-label="Beschreibung"></textarea>
-            </form-group>
-            <form-group>
-                <static bc-label="Username" bc-value="mmustermann" />
-            </form-group>
-        </form>
-    </column>
-</div>*@

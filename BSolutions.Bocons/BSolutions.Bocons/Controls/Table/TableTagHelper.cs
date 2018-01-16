@@ -1,6 +1,7 @@
 ﻿namespace BSolutions.Bocons.Controls.Table
 {
     using BSolutions.Brecons.Core.Controls;
+    using BSolutions.Brecons.Core.Enumerations;
     using BSolutions.Brecons.Core.Extensions;
     using Microsoft.AspNetCore.Razor.TagHelpers;
 
@@ -13,7 +14,7 @@
         private const string BorderedAttributeName = AttributePrefix + "bordered";
         private const string ResponsiveAttributeName = AttributePrefix + "responsive";
         private const string HoverAttributeName = AttributePrefix + "hover";
-        private const string InverseAttributeName = AttributePrefix + "inverse";
+        private const string ThemeAttributeName = AttributePrefix + "theme";
 
         #endregion
 
@@ -34,8 +35,8 @@
         [HtmlAttributeName(HoverAttributeName)]
         public bool IsHover { get; set; }
 
-        [HtmlAttributeName(InverseAttributeName)]
-        public bool IsInverse { get; set; }
+        [HtmlAttributeName(ThemeAttributeName)]
+        public Theme Theme { get; set; }
 
         #endregion
 
@@ -43,11 +44,8 @@
         {
             output.AddCssClass("table");
 
-            // Inverse
-            if(this.IsInverse)
-            {
-                output.AddCssClass("table-inverse");
-            }
+            // Theme
+            output.AddCssClass(this.Theme != Theme.Default ? $"table-{this.Theme.GetEnumInfo().Name}" : string.Empty);
 
             // Striped
             if (this.IsStriped)

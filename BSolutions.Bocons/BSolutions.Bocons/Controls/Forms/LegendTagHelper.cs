@@ -33,7 +33,7 @@
         public static IHtmlContent Build(string content, FormTagHelper formContext)
         {
             TagBuilder legend = new TagBuilder("legend");
-            legend.AddCssClass("col-form-legend");
+            legend.AddCssClass("col-form-label");
 
             // Screenreader only
             if (formContext != null && formContext.LabelsSrOnly)
