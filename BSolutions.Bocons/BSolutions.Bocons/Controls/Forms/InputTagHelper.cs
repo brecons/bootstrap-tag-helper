@@ -137,13 +137,13 @@
                 // Pre Addon
                 if (!string.IsNullOrEmpty(this.PreAddon))
                 {
-                    output.PreElement.AppendHtml(AddonTagHelper.Build(this.PreAddon, false));
+                    output.PreElement.AppendHtml(AddonTagHelper.Build(this.PreAddon, AddonType.Prepend));
                 }
 
                 // Post Addon
                 if (!string.IsNullOrEmpty(this.PostAddon))
                 {
-                    output.PostElement.AppendHtml(AddonTagHelper.Build(this.PostAddon, true));
+                    output.PostElement.AppendHtml(AddonTagHelper.Build(this.PostAddon, AddonType.Append));
                 }
 
                 output.PostElement.AppendHtml("</div>");
