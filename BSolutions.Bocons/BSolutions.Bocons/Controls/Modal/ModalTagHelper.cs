@@ -6,6 +6,8 @@
     using BSolutions.Brecons.Core.Enumerations;
     using BSolutions.Brecons.Core.Extensions;
     using Buttons;
+    using Microsoft.AspNetCore.Html;
+    using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Razor.TagHelpers;
     using System.Threading.Tasks;
 
@@ -20,6 +22,7 @@
         private const string ToggleButtonColorAttributeName = AttributePrefix + "toggle-color";
         private const string TitleAttributeName = AttributePrefix + "title";
         private const string SizeAttributeName = AttributePrefix + "size";
+        private const string PositionAttributeName = AttributePrefix + "position";
 
         #endregion
 
@@ -39,6 +42,9 @@
 
         [HtmlAttributeName(SizeAttributeName)]
         public Size Size { get; set; }
+
+        [HtmlAttributeName(PositionAttributeName)]
+        public ModalPosition Position { get; set; }
 
         #endregion
 
@@ -67,15 +73,54 @@
                         }));
             }
 
-            // Content
+            // Modal
             output.TagName = "div";
             output.AddCssClass("modal fade");
             output.Attributes.Add("tabindex", "-1");
             output.Attributes.Add("role", "dialog");
             output.Attributes.Add("aria-hidden", "true");
 
-            output.PreContent.AppendHtml($"<div class=\"{(this.Size != Size.Default ? $"modal-dialog modal-{this.Size.GetEnumInfo().Name}" : "modal-dialog")}\"><div class=\"modal-content\">{this.HeaderHtml}");
-            output.PostContent.AppendHtml($"</div></div>");
+            // Header
+            output.PreContent.AppendHtmlLine(this.HeaderHtml);
+
+            // Content
+            output.WrapContentOutside(this.BuildContent());
+
+            // Dialog
+            output.WrapContentOutside(this.BuildDialog());
+
+
+            //output.PreContent.AppendHtml($"<div class=\"{(this.Size != Size.Default ? $"modal-dialog modal-{this.Size.GetEnumInfo().Name}" : "modal-dialog")}\"><div class=\"modal-content\">{this.HeaderHtml}");
+            //output.PostContent.AppendHtml($"</div></div>");
+        }
+
+        private TagBuilder BuildDialog()
+        {
+            TagBuilder dialog = new TagBuilder("div");
+            dialog.MergeAttribute("role", "document");
+            dialog.AddCssClass("modal-dialog");
+
+            // Size
+            if(this.Size != Size.Default)
+            {
+                dialog.AddCssClass($"modal-{this.Size.GetEnumInfo().Name}");
+            }
+
+            // Position
+            if(this.Position != ModalPosition.Top)
+            {
+                dialog.AddCssClass("modal-dialog-centered");
+            }
+
+            return dialog;
+        }
+
+        private TagBuilder BuildContent()
+        {
+            TagBuilder content = new TagBuilder("div");
+            content.AddCssClass("modal-content");
+
+            return content;
         }
     }
 }
