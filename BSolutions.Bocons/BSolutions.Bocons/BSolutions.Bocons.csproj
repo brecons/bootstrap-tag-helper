@@ -18,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BSolutions.Brecons.Core" Version="2.1.2-beta1" />
+    <PackageReference Include="BSolutions.Brecons.Core" Version="2.1.2" />
   </ItemGroup>
 
 </Project>
