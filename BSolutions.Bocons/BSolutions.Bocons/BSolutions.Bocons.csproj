@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>2.1.1</Version>
+    <Version>2.2.0</Version>
     <Authors>Timm Bremus</Authors>
     <Company>Bremus Solutions</Company>
     <Product>Bocons - Bootstrap Tag Helper Library</Product>
@@ -15,10 +15,13 @@
     <PackageIconUrl>http://nuget.bremus-solutions.de/package-logo.png</PackageIconUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageTags>aspnetcore aspnetcoremvc taghelper taghelpers tag helpers bootstrap brecons bocons</PackageTags>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <FileVersion>2.2.0.0</FileVersion>
+    <PackageReleaseNotes>- Compatible with final Bootstrap v4.0.0</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BSolutions.Brecons.Core" Version="2.1.1" />
+    <PackageReference Include="BSolutions.Brecons.Core" Version="2.1.2" />
   </ItemGroup>
 
 </Project>

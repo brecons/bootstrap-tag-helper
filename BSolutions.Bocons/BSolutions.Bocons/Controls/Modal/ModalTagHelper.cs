@@ -44,7 +44,7 @@
         public Size Size { get; set; }
 
         [HtmlAttributeName(PositionAttributeName)]
-        public ModalPosition Position { get; set; }
+        public ModalPosition Position { get; set; } = ModalPosition.Top;
 
         #endregion
 
