@@ -1,11 +1,12 @@
 ﻿namespace BSolutions.Bocons.Controls.Navigation
 {
     using BSolutions.Bocons.Extensions;
+    using BSolutions.Bocons.Localization;
     using BSolutions.Brecons.Core.Attributes.Controls;
     using BSolutions.Brecons.Core.Controls;
     using BSolutions.Brecons.Core.Enumerations;
     using BSolutions.Brecons.Core.Extensions;
-    using BSolutions.Brecons.Core.Localization;
+
     using Enumerations;
     using Microsoft.AspNetCore.Html;
     using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -83,7 +84,7 @@
             }
 
             // Toggler
-            output.PreContent.AppendHtml($"<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#{this.Id}\" aria-controls=\"{this.Id}\" aria-expanded=\"false\" aria-label=\"{Resources.ToggleNavigation}\"><span class=\"navbar-toggler-icon\"></span></button>");
+            output.PreContent.AppendHtml($"<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#{this.Id}\" aria-controls=\"{this.Id}\" aria-expanded=\"false\" aria-label=\"{Resources.Navbar_ToggleNavigation}\"><span class=\"navbar-toggler-icon\"></span></button>");
 
             // Wrapper
             output.WrapHtmlContentInside($"<div class=\"collapse navbar-collapse\" id=\"{this.Id}\">", "</div>");

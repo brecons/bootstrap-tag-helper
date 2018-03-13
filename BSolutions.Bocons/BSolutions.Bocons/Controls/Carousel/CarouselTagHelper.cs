@@ -1,9 +1,9 @@
 ﻿namespace BSolutions.Bocons.Controls.Carousel
 {
+    using BSolutions.Bocons.Localization;
     using BSolutions.Brecons.Core.Attributes.Controls;
     using BSolutions.Brecons.Core.Controls;
     using BSolutions.Brecons.Core.Extensions;
-    using BSolutions.Brecons.Core.Localization;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Razor.TagHelpers;
     using System.Collections.Generic;
@@ -61,7 +61,7 @@
             // Controls
             if(this.HasControls)
             {
-                output.PostContent.AppendHtml($"<a class=\"carousel-control-prev\" href=\"#{this.Id}\" role=\"button\" data-slide=\"prev\"><span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span><span class=\"sr-only\">{Resources.Previous}</span></a><a class=\"carousel-control-next\" href=\"#{Id}\" role=\"button\" data-slide=\"next\"><span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span><span class=\"sr-only\">{Resources.Next}</span></a>");
+                output.PostContent.AppendHtml($"<a class=\"carousel-control-prev\" href=\"#{this.Id}\" role=\"button\" data-slide=\"prev\"><span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span><span class=\"sr-only\">{Resources.Carousel_Previous}</span></a><a class=\"carousel-control-next\" href=\"#{Id}\" role=\"button\" data-slide=\"next\"><span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span><span class=\"sr-only\">{Resources.Carousel_Next}</span></a>");
             }
         }
     }
