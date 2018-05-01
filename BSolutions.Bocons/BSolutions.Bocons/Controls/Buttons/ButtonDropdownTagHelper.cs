@@ -11,7 +11,7 @@
     using System.Threading.Tasks;
 
     [OutputElementHint("button")]
-    [RestrictChildren("a", "header", "divider")]
+    [RestrictChildren("a", "text", "header", "divider")]
     [HtmlTargetElement("button-dropdown")]
     [GenerateId("dropdown-", false)]
     public class ButtonDropdownTagHelper : BreconsTagHelperBase
