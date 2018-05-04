@@ -19,6 +19,7 @@
 
         private const string ControlsAttributeName = AttributePrefix + "controls";
         private const string IndicatorsAttributeName = AttributePrefix + "indicators";
+        private const string FadeAttributeName = AttributePrefix + "fade";
 
         #endregion
 
@@ -30,6 +31,9 @@
         [HtmlAttributeName(IndicatorsAttributeName)]
         public bool HasIndicators { get; set; }
 
+        [HtmlAttributeName(FadeAttributeName)]
+        public bool IsFade { get; set; }
+
         [HtmlAttributeNotBound]
         public List<CarouselItemTagHelper> Items { get; } = new List<CarouselItemTagHelper>();
 
@@ -40,6 +44,14 @@
             output.TagName = "div";
             output.AddCssClass("carousel slide");
             output.AddDataAttribute("ride", "carousel");
+
+            // Fade
+            if(this.IsFade)
+            {
+                output.AddCssClass("carousel-fade");
+            }
+
+            // Items
             output.Content.SetHtmlContent(await output.GetChildContentAsync());
 
             // Indicators
