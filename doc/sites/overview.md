@@ -8,5 +8,5 @@ The Bocons Tag Helper Library is only available for ASP.NET Core applications. T
 
 | Target Framework      | Version | Target Framework Moniker (TFM) | Support   |
 |-----------------------|---------|--------------------------------|-----------|
-| .NET Standard         | >= 2.0  | netstandard2.0                 | Supported |
-| .NET Core Application | >= 2.0  | netcoreapp2.0                  | Supported |
+| .NET Standard         | >= 2.0  | `netstandard2.0`               | Supported |
+| .NET Core Application | >= 2.0  | `netcoreapp2.0`                | Supported |
