@@ -50,22 +50,22 @@
             this.BindProperty(context);
             
             // Radio or Checkbox
-            if(BreconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
+            if(this.Type != null && BreconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderCheckControl(output);
             }
             // Button
-            else if(BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
+            else if(this.Type != null && BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderButtonControl(output);
             }
             // Range
-            else if(BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
+            else if(this.Type != null && BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderRangeControl(output);
             }
             // Input
-            else if (BreconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
+            else if (this.Type != null && BreconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderTextControl(output);
             }
