@@ -50,17 +50,22 @@
             this.BindProperty(context);
             
             // Radio or Checkbox
-            if(BreconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
+            if(this.Type != null && BreconsConsts.CheckTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderCheckControl(output);
             }
             // Button
-            else if(BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
+            else if(this.Type != null && BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderButtonControl(output);
             }
+            // Range
+            else if(this.Type != null && BreconsConsts.ButtonTypes.Any(t => t == this.Type.ToLower()))
+            {
+                this.RenderRangeControl(output);
+            }
             // Input
-            else if (BreconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
+            else if (this.Type != null && BreconsConsts.InputTypes.Any(t => t == this.Type.ToLower()))
             {
                 this.RenderTextControl(output);
             }
@@ -74,7 +79,7 @@
         /// <summary>
         /// Renders input controls from type 'checkbox' and 'radio'.
         /// </summary>
-        /// <param name="output"></param>
+        /// <param name="output">The tag helper output.</param>
         private void RenderCheckControl(TagHelperOutput output)
         {
             output.AddCssClass("form-check-input");
@@ -107,10 +112,34 @@
         /// <summary>
         /// Renders input controls from type 'button'.
         /// </summary>
-        /// <param name="output"></param>
+        /// <param name="output">The tag helper output.</param>
         private void RenderButtonControl(TagHelperOutput output)
         {
 
+        }
+
+        /// <summary>
+        /// Renders range controls from type 'range'.
+        /// </summary>
+        /// <param name="output">The tag helper output.</param>
+        private void RenderRangeControl(TagHelperOutput output)
+        {
+            output.AddCssClass("form-control-range");
+
+            // Validation
+            this.RenderValidation(output);
+
+            // Help
+            this.RenderHelp(output);
+
+            // Horizontal
+            this.RenderHorizontal(output);
+
+            // Size
+            this.RenderSize(output);
+
+            // Label
+            this.RenderLabel(output);
         }
 
         /// <summary>

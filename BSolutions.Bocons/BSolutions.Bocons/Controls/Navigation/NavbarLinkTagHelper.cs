@@ -1,9 +1,10 @@
 ﻿namespace BSolutions.Bocons.Controls.Navigation
 {
+    using BSolutions.Bocons.Localization;
     using BSolutions.Brecons.Core.Attributes.Controls;
     using BSolutions.Brecons.Core.Controls;
     using BSolutions.Brecons.Core.Extensions;
-    using BSolutions.Brecons.Core.Localization;
+
     using Microsoft.AspNetCore.Razor.TagHelpers;
 
     [OutputElementHint("a")]
@@ -46,11 +47,11 @@
             if (this.Active && context.HasContextItem<NavbarDropdownTagHelper>())
             {
                 output.AddCssClass("active");
-                output.PostContent.AppendHtml($"<span class=\"sr-only\">({Resources.Current})</span>");
+                output.PostContent.AppendHtml($"<span class=\"sr-only\">({Resources.Navbar_Current})</span>");
             }
             else if (this.Active && !context.HasContextItem<NavbarDropdownTagHelper>())
             {
-                output.PostContent.AppendHtml($"<span class=\"sr-only\">({Resources.Current})</span>");
+                output.PostContent.AppendHtml($"<span class=\"sr-only\">({Resources.Navbar_Current})</span>");
                 output.WrapHtmlOutside($"<li class=\"nav-item active\">", "</li>");
             }
             else if (!context.HasContextItem<NavbarDropdownTagHelper>())

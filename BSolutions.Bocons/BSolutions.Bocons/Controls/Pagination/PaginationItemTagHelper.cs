@@ -10,7 +10,7 @@
     using System.Threading.Tasks;
     using BSolutions.Brecons.Core.Attributes.Controls;
     using BSolutions.Brecons.Core.Extensions;
-    using BSolutions.Brecons.Core.Localization;
+    using BSolutions.Bocons.Localization;
 
     [OutputElementHint("li")]
     [HtmlTargetElement("pagination-item", ParentTag = "pagination")]
@@ -57,7 +57,7 @@
             if(this.IsActive)
             {
                 li.AddCssClass("active");
-                li.InnerHtml.AppendHtml($"<a class=\"page-link\" href=\"{this.Href}\">{this.Content} <span class=\"sr-only\">({Resources.Current})</span></a>");
+                li.InnerHtml.AppendHtml($"<a class=\"page-link\" href=\"{this.Href}\">{this.Content} <span class=\"sr-only\">({Resources.Pagination_Current})</span></a>");
             }
             else
             {

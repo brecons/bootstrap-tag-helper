@@ -13,9 +13,9 @@
         private const string SmallAttributeName = AttributePrefix + "small";
         private const string BorderedAttributeName = AttributePrefix + "bordered";
         private const string BorderlessAttributeName = AttributePrefix + "borderless";
-        private const string ResponsiveAttributeName = AttributePrefix + "responsive";
         private const string HoverAttributeName = AttributePrefix + "hover";
         private const string ThemeAttributeName = AttributePrefix + "theme";
+        private const string ResponsiveAttributeName = AttributePrefix + "responsive";
 
         #endregion
 
@@ -33,14 +33,14 @@
         [HtmlAttributeName(BorderlessAttributeName)]
         public bool IsBorderless { get; set; }
 
-        [HtmlAttributeName(ResponsiveAttributeName)]
-        public bool IsResponsive { get; set; }
-
         [HtmlAttributeName(HoverAttributeName)]
         public bool IsHover { get; set; }
 
         [HtmlAttributeName(ThemeAttributeName)]
         public Theme Theme { get; set; }
+
+        [HtmlAttributeName(ResponsiveAttributeName)]
+        public Breakpoint? Responsive { get; set; }
 
         #endregion
 
@@ -82,9 +82,9 @@
             }
 
             // Responsive
-            if(this.IsResponsive)
+            if(this.Responsive.HasValue)
             {
-                output.AddCssClass("table-responsive");
+                output.WrapHtmlOutside($"<div class=\"{(this.Responsive.Value == Breakpoint.XSmall ? "table-responsive" : $"table-responsive-{this.Responsive.GetEnumInfo().Name}")}\">", "</div>");
             }
         }
     }

@@ -10,7 +10,7 @@
     using System.Threading.Tasks;
     using BSolutions.Brecons.Core.Enumerations;
     using BSolutions.Brecons.Core.Extensions;
-    using BSolutions.Brecons.Core.Localization;
+    using BSolutions.Bocons.Localization;
 
     [OutputElementHint("ul")]
     [RestrictChildren("pagination-item")]
@@ -67,11 +67,11 @@
             // Previous
             if (this.Items.Any() && this.Items.First().IsActive)
             {
-                output.Content.AppendHtml($"<li class=\"page-item disabled\"><a class=\"page-link\" href=\"{this.PreviousHref}\" aria-label=\"{Resources.Previous}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.PreviousText) ? this.PreviousText : "&laquo;")}</span><span class=\"sr-only\">{Resources.Previous}</span></a></li>");
+                output.Content.AppendHtml($"<li class=\"page-item disabled\"><a class=\"page-link\" href=\"{this.PreviousHref}\" aria-label=\"{Resources.Pagination_Previous}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.PreviousText) ? this.PreviousText : "&laquo;")}</span><span class=\"sr-only\">{Resources.Pagination_Previous}</span></a></li>");
             }
             else
             {
-                output.Content.AppendHtml($"<li class=\"page-item\"><a class=\"page-link\" href=\"{this.PreviousHref}\" aria-label=\"{Resources.Previous}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.PreviousText) ? this.PreviousText : "&laquo;")}</span><span class=\"sr-only\">{Resources.Previous}</span></a></li>");
+                output.Content.AppendHtml($"<li class=\"page-item\"><a class=\"page-link\" href=\"{this.PreviousHref}\" aria-label=\"{Resources.Pagination_Previous}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.PreviousText) ? this.PreviousText : "&laquo;")}</span><span class=\"sr-only\">{Resources.Pagination_Previous}</span></a></li>");
             }
 
             // Items
@@ -83,11 +83,11 @@
             // Next
             if (this.Items.Any() && this.Items.Last().IsActive)
             {
-                output.Content.AppendHtml($"<li class=\"page-item disabled\"><a class=\"page-link\" href=\"{this.NextHref}\" aria-label=\"{Resources.Next}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.NextText) ? this.NextText : "&raquo;")}</span><span class=\"sr-only\">{Resources.Next}</span></a></li>");
+                output.Content.AppendHtml($"<li class=\"page-item disabled\"><a class=\"page-link\" href=\"{this.NextHref}\" aria-label=\"{Resources.Pagination_Next}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.NextText) ? this.NextText : "&raquo;")}</span><span class=\"sr-only\">{Resources.Pagination_Next}</span></a></li>");
             }
             else
             {
-                output.Content.AppendHtml($"<li class=\"page-item\"><a class=\"page-link\" href=\"{this.NextHref}\" aria-label=\"{Resources.Next}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.NextText) ? this.NextText : "&raquo;")}</span><span class=\"sr-only\">{Resources.Next}</span></a></li>");
+                output.Content.AppendHtml($"<li class=\"page-item\"><a class=\"page-link\" href=\"{this.NextHref}\" aria-label=\"{Resources.Pagination_Next}\"><span aria-hidden=\"true\">{(!string.IsNullOrEmpty(this.NextText) ? this.NextText : "&raquo;")}</span><span class=\"sr-only\">{Resources.Pagination_Next}</span></a></li>");
             }
 
             // Size
@@ -107,7 +107,7 @@
                     break;
             }
 
-            output.WrapHtmlOutside($"<nav aria-label=\"{(!string.IsNullOrEmpty(this.Title) ? this.Title : Resources.PaginationMenu)}\">", "</nav>");
+            output.WrapHtmlOutside($"<nav aria-label=\"{(!string.IsNullOrEmpty(this.Title) ? this.Title : Resources.Pagination_Menu)}\">", "</nav>");
         }
     }
 }

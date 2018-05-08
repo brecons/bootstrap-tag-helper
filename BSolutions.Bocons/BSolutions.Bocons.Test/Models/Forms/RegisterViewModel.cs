@@ -9,6 +9,9 @@ namespace BSolutions.Bocons.Test.Models.Forms
 {
     public class RegisterViewModel
     {
+        [Display(Name = "Date", Description = "The current date")]
+        public string Date { get; set; }
+
         [Display(Name = "Name")]
         [Required]
         public string Name { get; set; }
@@ -25,6 +28,7 @@ namespace BSolutions.Bocons.Test.Models.Forms
 
         public RegisterViewModel()
         {
+            this.Date = DateTime.Now.ToShortDateString();
             this.Countries.Add(new SelectListItem { Value = "0", Text = "Choose a country" });
             this.Countries.Add(new SelectListItem { Value = "1", Text = "Germany" });
             this.Countries.Add(new SelectListItem { Value = "2", Text = "United States" });

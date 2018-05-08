@@ -2,9 +2,10 @@
 {
     using BSolutions.Bocons.Enumerations;
     using BSolutions.Bocons.Extensions;
+    using BSolutions.Bocons.Localization;
     using BSolutions.Brecons.Core.Controls;
     using BSolutions.Brecons.Core.Extensions;
-    using BSolutions.Brecons.Core.Localization;
+
     using Microsoft.AspNetCore.Razor.TagHelpers;
     using System.Text.RegularExpressions;
     using System.Threading.Tasks;
@@ -59,7 +60,7 @@
             if (this.Dismissible)
             {
                 output.AddCssClass("alert-dismissible");
-                output.PreContent.SetHtmlContent($"<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"{Resources.CloseIconText}\"><span aria-hidden=\"true\">&times;</span></button>");
+                output.PreContent.SetHtmlContent($"<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"{Resources.Alert_CloseIconText}\"><span aria-hidden=\"true\">&times;</span></button>");
             }
 
             // Disable Link Styling

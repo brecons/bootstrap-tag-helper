@@ -19,7 +19,7 @@
         #region --- Attribute Names ---
 
         private const string TitleAttributeName = AttributePrefix + "title";
-        private const string DropupAttributeName = AttributePrefix + "dropup";
+        private const string VariationAttributeName = AttributePrefix + "variation";
         private const string ColorAttributeName = AttributePrefix + "color";
         private const string RightAlignmentAttributeName = AttributePrefix + "alignment-right";
         private const string SizeAttributeName = AttributePrefix + "size";
@@ -29,8 +29,8 @@
 
         #region --- Properties ---
 
-        [HtmlAttributeName(DropupAttributeName)]
-        public bool IsDropup { get; set; }
+        [HtmlAttributeName(VariationAttributeName)]
+        public DropdownButtonPosition Variation { get; set; } = DropdownButtonPosition.Bottom;
 
         [HtmlAttributeName(TitleAttributeName)]
         public string Title { get; set; }
@@ -92,7 +92,7 @@
             output.PostElement.AppendHtml("</div>");
 
             // Container
-            output.WrapHtmlOutside($"<div class=\"{(this.IsDropup ? "btn-group dropup" : "btn-group")}\">", "</div>");
+            output.WrapHtmlOutside($"<div class=\"{(this.Variation != DropdownButtonPosition.Bottom ? $"btn-group {this.Variation.GetEnumInfo().Name}" : "btn-group")}\">", "</div>");
         }
 
         private TagBuilder DropdownButtonBuilder()
