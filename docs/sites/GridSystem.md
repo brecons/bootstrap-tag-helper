@@ -4,10 +4,6 @@ Use the powerful mobile-first flexbox [Bootstrap Grid System](https://getbootstr
 
 Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. All Bootstrap Grid System features are covered from the Bocons Tag Helper!
 
-## Introduction
-
-The following example shows the basic usage of the Bocons Grid System and represents a first starting point.
-
 ![Grid System](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/grid-system_01.PNG)
 
     <container>
@@ -38,7 +34,7 @@ Use the `bc-fluid` attribute for a full width container, spanning the entire wid
 
 To align all columns in a vertical direction set the `vertical-alignment` attribute. Possible values for the alignment are `Top`, `Middle` and `Bottom`.
 
-![Vertical Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/grid-system_02.PNG)
+![Row Vertical Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/grid-system_02.PNG)
 
     <container>
         <row vertical-alignment="Top" style="height: 10rem;">
@@ -62,7 +58,7 @@ To align all columns in a vertical direction set the `vertical-alignment` attrib
 
 To align all columns in the horizontal direction set the `alignment` attribute. Possible values for the classic horizontal alignment are `Left`, `Center` and `Right`. Choose the value `Around` for the same width whitespace before, between and after the aligned columns. The value `Between` renders a full width whitespace between the columns.
 
-![Horizontal Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/grid-system_03.PNG)
+![Row Horizontal Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/grid-system_03.PNG)
 
     <container>
         <row alignment="Left">
@@ -172,7 +168,7 @@ Set the column offset for a specified resolution with the appropriate attribute 
 
 To align a single column in the vertical direction within a row set the `vertical-alignment` attribute.
 
-![Column Offsetting](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/grid-system_08.PNG)
+![Column Vertical Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/grid-system_08.PNG)
 
     <container>
         <row style="height: 10rem;">
