@@ -5,34 +5,19 @@ The [Bootstrap Controls](https://getbootstrap.com/docs/4.0/components/forms/#for
 <ul class="categorized-view">
     <li>
         <h5>HTML Controls</h5>
-        <a asp-action="Controls" asp-route-control="text">Text</a>
-        <a asp-action="Controls" asp-route-control="textarea">Textarea</a>
-        <a asp-action="Controls" asp-route-control="checkbox">Checkbox List</a>
-        <a asp-action="Controls" asp-route-control="radio">Radio List</a>
-        <a asp-action="Controls" asp-route-control="select">Dropdown (Select)</a>
-        <a asp-action="Controls" asp-route-control="static">Static</a>
-        <a asp-action="Controls" asp-route-control="info">Label &amp; Help</a>
+        <a href="">Text</a>
+        <a href="">Textarea</a>
+        <a href="">Checkbox List</a>
+        <a href="">Radio List</a>
+        <a href="">Dropdown (Select)</a>
+        <a href="">Static</a>
+        <a href="">Label &amp; Help</a>
     </li>
     <li>
         <h5>Buttons</h5>
-        <a asp-action="Controls" asp-route-control="button">Button</a>
-        <a asp-action="Controls" asp-route-control="buttongroup">Button Group</a>
-        <a asp-action="Controls" asp-route-control="dbutton">Dropdown Button</a>
-    </li>
-    <li>
-        <h5>Editors</h5>
-        <a asp-action="Controls" asp-route-control="summernote">Summernote</a>
-        <a asp-action="Controls" asp-route-control="markdown">Markdown</a>
-    </li>
-
-    <li>
-        <h5>Date &amp; Time</h5>
-        <a asp-action="Controls" asp-route-control="datepicker">Datepicker</a>
-    </li>
-    <li>
-        <h5>Miscellaneous</h5>
-        <a asp-action="Controls" asp-route-control="dropzone">Dropzone</a>
-        <a asp-action="Controls" asp-route-control="nouislider">noUiSlider</a>
+        <a href="">Button</a>
+        <a href="">Button Group</a>
+        <a href="">Dropdown Button</a>
     </li>
 </ul>
 
@@ -44,7 +29,7 @@ The following configuration attributes are available for all form controls respe
 
 Define a label for form controls by adding the `bc-label` attribute or use the `<label>` tag helper within the `<form-group>`.
 
-![Label for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_06.PNG)
+![Label for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_01.PNG)
 
     <!-- Label via form control attribute -->
     <form-group>
@@ -61,7 +46,7 @@ Define a label for form controls by adding the `bc-label` attribute or use the `
 
 A block-level help text for form controls can be created by using the `bc-help` attribute or use the `<help>` tag helper within the `<form-group>`.
 
-![Help for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_07.PNG)
+![Help for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_02.PNG)
 
     <!-- Block-level help via form control attribute -->
     <form-group>
@@ -78,7 +63,7 @@ A block-level help text for form controls can be created by using the `bc-help` 
 
 Set the height of a form control by adding the `bc-size` attribute. Available sizes are `Default`, `Large` or `Small`.
 
-![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_08.PNG)
+![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_03.PNG)
 
     <form-group>
         <input type="password" placeholder="Enter password" bc-size="Large" />
@@ -94,7 +79,7 @@ Set the height of a form control by adding the `bc-size` attribute. Available si
 
 Mark a control as required with the `bc-required` attribute. This adds the HTML `required` attribute to the control markup und mark the control label as required with a star (*).
 
-![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_09.PNG)
+![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_04.PNG)
 
     <form-group>
         <input bc-label="E-mail address" bc-required="true" type="text" />
