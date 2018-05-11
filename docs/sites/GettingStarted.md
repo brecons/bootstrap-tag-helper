@@ -6,7 +6,7 @@ This article demonstrates how to include Bocons Tag Helpers into an ASP.NET Core
 
 The first step is to create a new project in Visual Studio. Choose the ***Web*** rubric and subsequent the ***ASP.NET Core Web Application*** template. Adapt the project parameters like ***Name***, ***Location*** and ***Solution name*** and click ***OK***.
 
-![New ASP.NET Core Web Application](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_01.PNG)
+![New ASP.NET Core Web Application](https://github.com/brecons/bootstrap-tag-helper/blob/master/docs/images/getting-started_01.png?raw=true)
 
 In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET Core 2.0*** version as well as a project template. Optionally change the authentication and click ***OK***.
 
