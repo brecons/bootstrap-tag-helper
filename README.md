@@ -1,7 +1,7 @@
 # Bootstrap Tag Helper ([Bocons](https://www.brecons.net/Product/Bocons))
 
 ## About Bocons
-Bocons is a free tag helper library for Bootstrap (Version 4.0.0) - the world's most popular mobile-first and responsive front-end framework.
+Bocons is a free tag helper library for Bootstrap (Version 4) - the world's most popular mobile-first and responsive front-end framework.
 Bocons is one of a [Brecons](https://www.brecons.net) product and provides components and controls to use in a ASP.NET Core web application.
 
 ## Compatibility and Requirements
@@ -13,7 +13,38 @@ Bocons is one of a [Brecons](https://www.brecons.net) product and provides compo
 | .NET Core Application | 1.0 | `netcoreapp1.0` | Not Supported |
 
 ## Getting Started
-Coming up soon.
+The Bocons Tag Helper Library is published as a package in NuGet. Only three steps are necessary for a successful installation:
+
+### Install NuGet Packages
+
+Use the ***Package Manage Console*** of Visual Studio to install Bocons:
+
+    PM> Install-Package BSolutions.Bocons
+
+### Add Service Configuration
+
+Register inside the `ConfigureServices` method of `Startup.cs` a singleton for the `IActionContextAccessor` and import the namespace `Microsoft.AspNetCore.Mvc.Infrastructure`.
+
+    using Microsoft.AspNetCore.Mvc.Infrastructure
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+	    // Add a singleton for IActionContextAccessor
+        services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+
+        services.AddMvc();
+    }
+
+### Modify View Imports
+
+Modify `/Views/_ViewImports.cshtml` and enable the Bocons Tag Helpers for the web application views:
+
+    @using MyCompany.MyApplication
+    @using MyCompany.MyApplication.Models
+    @using BSolutions.Bocons.Enumerations
+    @using BSolutions.Brecons.Core.Enumerations
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+    @addTagHelper *, BSolutions.Bocons
 
 ## Documentation
 For complete a Bocons documentation, please visit [https://www.brecons.net/Documentation/Bocons](https://www.brecons.net/Documentation/Bocons)
