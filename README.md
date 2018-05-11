@@ -13,7 +13,9 @@ Bocons is one of a [Brecons](https://www.brecons.net) product and provides compo
 | .NET Core Application | 1.0 | `netcoreapp1.0` | Not Supported |
 
 ## Getting Started
-The Bocons Tag Helper Library is published as a package in NuGet. Only three steps are necessary for a successful installation:
+The Bocons Tag Helper Library is published as a package in NuGet. Only three essential steps are necessary for installation.
+
+The full Getting started Guide is available on [https://www.brecons.net/Documentation/Bocons/GettingStarted](https://www.brecons.net/Documentation/Bocons/GettingStarted).
 
 ### Install NuGet Packages
 
