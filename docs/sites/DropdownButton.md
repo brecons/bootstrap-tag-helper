@@ -53,15 +53,16 @@ With the `<header>` tag helper it is possible to add a header to label sections 
 
 The `bc-title` attribute specifies a title for the button that triggers the dropdown menu.
 
-### Dropup
+### Variation
 
-Set the `bc-dropup` attribute to trigger the dropdown menu above the button.
+Trigger dropdown menus at the `Left`, `Right`, `Top`or `Bottom` (default) of the element by adding the `bc-variation` attribute.
 
-![Dropup Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_02.PNG)
+![Dropdown Button Variation](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_02.PNG)
 
-    <button-dropdown bc-title="Dropup" bc-dropup="true">
-        ...
-    </button-dropdown>
+        <button-dropdown bc-title="Button Dropdown"> ... </button-dropdown>
+        <button-dropdown bc-title="Button Dropup" bc-variation="Top"> ... </button-dropdown>
+        <button-dropdown bc-title="Button Dropleft" bc-variation="Left"> ... </button-dropdown>
+        <button-dropdown bc-title="Button Dropright" bc-variation="Right"> ... </button-dropdown>
 
 ### Color
 
