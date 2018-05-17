@@ -10,6 +10,7 @@ The [Bootstrap Controls](https://getbootstrap.com/docs/4.0/components/forms/#for
         <a href="">Checkbox List</a>
         <a href="">Radio List</a>
         <a href="">Dropdown (Select)</a>
+        <a href="">Range</a>
         <a href="">Static</a>
         <a href="">Label &amp; Help</a>
     </li>
