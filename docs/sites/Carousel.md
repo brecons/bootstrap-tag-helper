@@ -28,6 +28,12 @@ You can also add the indicators to the carousel by setting the `bc-indicators` a
 
     <carousel bc-controls="true" bc-indicators="true"> ... </carousel>
 
+### Crossfade
+
+Add the `bc-fade` attribute to your carousel to animate slides with a fade transition instead of a slide.
+
+    <carousel bc-controls="true" bc-fade="true"> ... </carousel>
+
 ## Item Configuration `<carousel-item>`
 
 ### Source (Mandatory)

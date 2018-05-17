@@ -5,19 +5,19 @@ The [Bootstrap Controls](https://getbootstrap.com/docs/4.0/components/forms/#for
 <ul class="categorized-view">
     <li>
         <h5>HTML Controls</h5>
-        <a href="">Text</a>
-        <a href="">Textarea</a>
-        <a href="">Checkbox List</a>
-        <a href="">Radio List</a>
-        <a href="">Dropdown (Select)</a>
-        <a href="">Static</a>
-        <a href="">Label &amp; Help</a>
+        <a href="/Documentation/Bocons?view=Input">Text</a>
+        <a href="/Documentation/Bocons?view=Textarea">Textarea</a>
+        <a href="/Documentation/Bocons?view=CheckboxList">Checkbox List</a>
+        <a href="/Documentation/Bocons?view=RadioList">Radio List</a>
+        <a href="/Documentation/Bocons?view=Select">Dropdown (Select)</a>
+        <a href="/Documentation/Bocons?view=Range">Range</a>
+        <a href="/Documentation/Bocons?view=LabelAndHelp">Label &amp; Help</a>
     </li>
     <li>
         <h5>Buttons</h5>
-        <a href="">Button</a>
-        <a href="">Button Group</a>
-        <a href="">Dropdown Button</a>
+        <a href="/Documentation/Bocons?view=Button">Button</a>
+        <a href="/Documentation/Bocons?view=ButtonGroup">Button Group</a>
+        <a href="/Documentation/Bocons?view=DropdownButton">Dropdown Button</a>
     </li>
 </ul>
 

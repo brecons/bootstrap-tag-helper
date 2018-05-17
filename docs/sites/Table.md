@@ -71,9 +71,11 @@ Add the `bc-bordered` attribute for borders on all sides of the table and cells.
 
 ### Responsive
 
-Create responsive tables by adding the `bc-responsive` attribute to make them scroll horizontally on small devices. When viewing on anything larger than 768 px wide, you will not see any difference in these tables.
+Create responsive tables by setting the `bc-responsive` attribute to make them scroll horizontally on small devices. Possible values are `XSmall`, `Small`, `Medium`, `Large` or `XLarge`. The definition of the respective breakpoint determines when no scroll bar is displayed for the table.
 
-    <table bc-responsive="true"> ... </table>
+    <table bc-responsive="Breakpoint.Medium"> ... </table>
+
+***Please note:*** Since the attribute can also have no value, the Enumeration must always be specified in its definition.
 
 ### Hover
 
