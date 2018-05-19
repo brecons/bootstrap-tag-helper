@@ -14,25 +14,29 @@ To enable the client-side validation in ASP.NET MVC Core in combination with Boc
 
 The easiest way to load these packages is to modify the `bower.json`. This file can be found in your project root path.
 
-    {
-        ...
-        "dependencies": {
-            "bootstrap": "v4.0.0-beta",
-            "jquery": "3.2.1",
-            "jquery-validation": "1.17.0",
-            "jquery-validation-unobtrusive": "3.2.6",
-            "jquery-validation-unobtrusive-bootstrap": "2.0.0"
-        }
+```json
+{
+    ...
+    "dependencies": {
+        "bootstrap": "v4.0.0-beta",
+        "jquery": "3.2.1",
+        "jquery-validation": "1.17.0",
+        "jquery-validation-unobtrusive": "3.2.6",
+        "jquery-validation-unobtrusive-bootstrap": "2.0.0"
     }
+}
+```
 
 After embedding the packages into your solution, add a reference to each file within the `/Shared/_Layout.cshtml` page:
 
-    <script src="~/lib/jquery/dist/jquery.slim.min.js"></script>
-    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive-bootstrap/dist/unobtrusive-bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+```markup
+<script src="~/lib/jquery/dist/jquery.slim.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive-bootstrap/dist/unobtrusive-bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+```
 
 ## Data Binding Validation
 
@@ -46,60 +50,66 @@ A **server-side** validation will execute in the controller logic after a postba
 
 ### View Model
 
-    public class RegisterViewModel
-    {
-        [Display(Name = "Name")]
-        [LocalizedRequired]
-        public string Name { get; set; }
+```csharp
+public class RegisterViewModel
+{
+    [Display(Name = "Name")]
+    [LocalizedRequired]
+    public string Name { get; set; }
 
-        [Display(Name = "Email Address")]
-        [LocalizedRequired]
-        [LocalizedEmailAddress]
-        public string Email { get; set; }
+    [Display(Name = "Email Address")]
+    [LocalizedRequired]
+    [LocalizedEmailAddress]
+    public string Email { get; set; }
 	
-        [Display(Name = "Country")]
-        public int Country { get; set; }
+    [Display(Name = "Country")]
+    public int Country { get; set; }
 	
-        public List<SelectListItem> Countries { get; set; } = new List<SelectListItem>();
-    }
+    public List<SelectListItem> Countries { get; set; } = new List<SelectListItem>();
+}
+```
 
 ### Controller
 
-    public IActionResult Register()
-    {
-        return View(new RegisterViewModel());
-    }
+```csharp
+public IActionResult Register()
+{
+    return View(new RegisterViewModel());
+}
 
-    [HttpPost]
-    public IActionResult Register(RegisterViewModel model)
-    {
-        // Server-side validation
-        if (model.Country == 0) ModelState.AddModelError("Country", "Please choose a country.");
+[HttpPost]
+public IActionResult Register(RegisterViewModel model)
+{
+    // Server-side validation
+    if (model.Country == 0) ModelState.AddModelError("Country", "Please choose a country.");
     
-        // On validation errors go back to view
-        if (!ModelState.IsValid) return View(model);
+    // On validation errors go back to view
+    if (!ModelState.IsValid) return View(model);
 	
-        return RedirectToAction("Success");
-    }
+    return RedirectToAction("Success");
+}
+```
 
 ### View
 
 ![View with Validation](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/validation_01.PNG)
 
-    @model MyCompany.MyApplication.Models.RegisterViewModel
+```markup
+@model MyCompany.MyApplication.Models.RegisterViewModel
     
-    <form asp-action="Register" bc-validation="true">
-        <form-group>
-            <input type="text" asp-for="Name" />
-        </form-group>
-        <form-group>
-            <input type="email" asp-for="Email" />
-        </form-group>
-        <form-group>
-            <select asp-for="Country" asp-items="Model.Countries"></select>
-        </form-group>
-        <button type="submit">Submit</button>
-    </form>
+<form asp-action="Register" bc-validation="true">
+    <form-group>
+        <input type="text" asp-for="Name" />
+    </form-group>
+    <form-group>
+        <input type="email" asp-for="Email" />
+    </form-group>
+    <form-group>
+        <select asp-for="Country" asp-items="Model.Countries"></select>
+    </form-group>
+    <button type="submit">Submit</button>
+</form>
+```
 
 ## Form Configuration `<form>`
 
@@ -109,8 +119,10 @@ If the `bc-validation` attribute is set to `true`, for each control within the f
 
 ![Input Field with Validation](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/validation_02.PNG)
 
-    <form asp-action="Register" bc-validation="true">
-        ...
-    </form>
+```markup
+<form asp-action="Register" bc-validation="true">
+    ...
+</form>
+```
 
 ***Please note:*** When the `bc-validation` attribute is set to `true` for a form, it is not longer necessary to place a `<span asp-validation-for="{Property}"></span>` container below the form control. Bocons do that automatically for you.

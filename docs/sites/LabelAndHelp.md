@@ -8,10 +8,12 @@ A label shows a name for a control and can be defined with the `<label>` tag wit
 
 ![Label](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/label_01.PNG)
 
-    <form-group>
-        <label for="input1">Text Control Label</label>
-        <input id="input1" type="text" />
-    </form-group>
+```markup
+<form-group>
+    <label for="input1">Text Control Label</label>
+    <input id="input1" type="text" />
+</form-group>
+```
 
 ### Screenreader
 
@@ -23,7 +25,9 @@ A block-level help text for form controls can be created with the `<help>` tag h
 
 ![Help](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/help_01.PNG)
 
-    <form-group>
-        <input type="text" bc-label="Text Control Label" />
-        <help>A block-level help text</help>
-    </form-group>
+```markup
+<form-group>
+    <input type="text" bc-label="Text Control Label" />
+    <help>A block-level help text</help>
+</form-group>
+```

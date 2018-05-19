@@ -4,7 +4,9 @@ The [Bootstrap Progress](https://getbootstrap.com/docs/4.0/components/progress/)
 
 ![Progress](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/progress_01.PNG)
 
-    <progress bc-value="75" />
+```markup
+<progress bc-value="75" />
+```
 
 ## Progress Configuration `<progress />`
 
@@ -18,7 +20,9 @@ Add a label to your progress bar and set the `bc-label` attribute to `true`.
 
 ![Progress Label](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/progress_02.PNG)
 
-    <progress bc-value="25" bc-label="true" />
+```markup
+<progress bc-value="25" bc-label="true" />
+```
 
 ### Height
 
@@ -26,8 +30,10 @@ It's possible to adapt the height of a progress bar with the `bc-height` attribu
 
 ![Progress Height](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/progress_03.PNG)
 
-    <progress bc-value="25" bc-height="1" />
-    <progress bc-value="25" bc-height="20" />
+```markup
+<progress bc-value="25" bc-height="1" />
+<progress bc-value="25" bc-height="20" />
+```
 
 ### Color
 
@@ -35,10 +41,12 @@ Use the `bc-color` attribute to set a color for the progress bar.
 
 ![Progress Color](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/progress_04.PNG)
 
-    <progress bc-value="25" bc-color="Success" />
-    <progress bc-value="50" bc-color="Info" />
-    <progress bc-value="75" bc-color="Warning" />
-    <progress bc-value="100" bc-color="Danger" />
+```markup
+<progress bc-value="25" bc-color="Success" />
+<progress bc-value="50" bc-color="Info" />
+<progress bc-value="75" bc-color="Warning" />
+<progress bc-value="100" bc-color="Danger" />
+```
 
 ### Striped
 
@@ -46,10 +54,12 @@ Add the `bc-striped` attribute and set it to `true` to apply a stripe gradient o
 
 ![Progress Stripes](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/progress_05.PNG)
 
-    <progress bc-value="25" bc-color="Success" bc-striped="true"  />
-    <progress bc-value="50" bc-color="Info" bc-striped="true" />
-    <progress bc-value="75" bc-color="Warning" bc-striped="true"  />
-    <progress bc-value="100" bc-color="Danger" bc-striped="true"  />
+```markup
+<progress bc-value="25" bc-color="Success" bc-striped="true"  />
+<progress bc-value="50" bc-color="Info" bc-striped="true" />
+<progress bc-value="75" bc-color="Warning" bc-striped="true"  />
+<progress bc-value="100" bc-color="Danger" bc-striped="true"  />
+```
 
 ### Animated
 

@@ -4,11 +4,13 @@ A slideshow component for cycling through elements—images or slides of text — li
 
 ![Carousel](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_01.PNG)
 
-    <carousel>
-        <carousel-item bc-src="~/images/banner1.svg" bc-alt="Slide 1" bc-active="true"></carousel-item>
-        <carousel-item bc-src="~/images/banner2.svg" bc-alt="Slide 2"></carousel-item>
-        <carousel-item bc-src="~/images/banner3.svg" bc-alt="Slide 3"></carousel-item>
-    </carousel>
+```markup
+<carousel>
+    <carousel-item bc-src="~/images/banner1.svg" bc-alt="Slide 1" bc-active="true"></carousel-item>
+    <carousel-item bc-src="~/images/banner2.svg" bc-alt="Slide 2"></carousel-item>
+    <carousel-item bc-src="~/images/banner3.svg" bc-alt="Slide 3"></carousel-item>
+</carousel>
+```
 
 ## Carousel Configuration `<carousel>`
 
@@ -18,7 +20,9 @@ Add a previous and next control with `bc-controls` attribute.
 
 ![Carousel Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_02.PNG)
 
-    <carousel bc-controls="true"> ... </carousel>
+```markup
+<carousel bc-controls="true"> ... </carousel>
+```
 
 ### Indicators
 
@@ -26,13 +30,17 @@ You can also add the indicators to the carousel by setting the `bc-indicators` a
 
 ![Carousel Indicators](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_03.PNG)
 
-    <carousel bc-controls="true" bc-indicators="true"> ... </carousel>
+```markup
+<carousel bc-controls="true" bc-indicators="true"> ... </carousel>
+```
 
 ### Crossfade
 
 Add the `bc-fade` attribute to your carousel to animate slides with a fade transition instead of a slide.
 
-    <carousel bc-controls="true" bc-fade="true"> ... </carousel>
+```markup
+<carousel bc-controls="true" bc-fade="true"> ... </carousel>
+```
 
 ## Item Configuration `<carousel-item>`
 
@@ -54,23 +62,25 @@ Add captions to your slides easily by adding HTML markup within the `<carousel-i
 
 ![Carousel Item Captions](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_04.PNG)
 
-    <carousel bc-controls="true" bc-indicators="true">
-        <carousel-item bc-src="~/images/banner1.svg" bc-alt="Slide 1" bc-active="true">
-            <h3>First Slide Label</h3>
-            <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-        </carousel-item>
-        <carousel-item bc-src="~/images/banner2.svg" bc-alt="Slide 2">
-            <h3>Second Slide Label</h3>
-            <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-        </carousel-item>
-        <carousel-item bc-src="~/images/banner3.svg" bc-alt="Slide 3">
-            <h3>Third Slide Label</h3>
-            <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-        </carousel-item>
-    </carousel>
+```markup
+<carousel bc-controls="true" bc-indicators="true">
+    <carousel-item bc-src="~/images/banner1.svg" bc-alt="Slide 1" bc-active="true">
+        <h3>First Slide Label</h3>
+        <p>
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+        </p>
+    </carousel-item>
+    <carousel-item bc-src="~/images/banner2.svg" bc-alt="Slide 2">
+        <h3>Second Slide Label</h3>
+        <p>
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+        </p>
+    </carousel-item>
+    <carousel-item bc-src="~/images/banner3.svg" bc-alt="Slide 3">
+        <h3>Third Slide Label</h3>
+        <p>
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+        </p>
+    </carousel-item>
+</carousel>
+```

@@ -12,7 +12,7 @@ In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET 
 
 ![Project Configuration](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_02.PNG)
 
-**Please note:** If you choose a empty template you have to include Bootstrap manually with Bower Package Manager. For further informations check Update Bower Packages chapter.
+***Please note:*** If you choose a empty template you have to include Bootstrap manually with Bower Package Manager. For further informations check Update Bower Packages chapter.
 
 ## Install NuGet Packages
 
@@ -24,7 +24,7 @@ In NuGet Package Manager search for `Bocons` package, choose it and click ***Ins
 
 ![Bocons NuGet Package](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_03.PNG)
 
-**Please note:** Not every Bocons package is compatible with every Bootstrap version. For further information check the description of the selected package.
+***Please note:*** Not every Bocons package is compatible with every Bootstrap version. For further information check the description of the selected package.
 
 ## Update Bower Packages
 
@@ -32,40 +32,46 @@ After installation a Bocons NuGet package it is necessary to load the compatible
 
 To update the Bower packages open the `bower.json` in the project root directory and set the correct versions of the required frameworks:
 
-    {
-        "name": "asp.net",
-        "private": true,
-        "dependencies": {
-            "bootstrap": "v4.0.0-beta",
-            "jquery": "3.2.1",
-            "jquery-validation": "1.17.0",
-            "jquery-validation-unobtrusive": "3.2.6"
-        }
+```json
+{
+    "name": "asp.net",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "v4.0.0-beta",
+        "jquery": "3.2.1",
+        "jquery-validation": "1.17.0",
+        "jquery-validation-unobtrusive": "3.2.6"
     }
+}
+```
 
 ## Add Service Configuration
 
 To ensure that Bocons runs correctly it is necessary to adapt the `Startup.cs`. Register inside the `ConfigureServices` method a singleton for the `IActionContextAccessor` and import the namespace `Microsoft.AspNetCore.Mvc.Infrastructure`.
 
-    using Microsoft.AspNetCore.Mvc.Infrastructure
+```csharp
+using Microsoft.AspNetCore.Mvc.Infrastructure
 
-    public void ConfigureServices(IServiceCollection services)
-    {
-	    // Add a singleton for IActionContextAccessor
-        services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+public void ConfigureServices(IServiceCollection services)
+{
+	// Add a singleton for IActionContextAccessor
+    services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
-        services.AddMvc();
-    }
+    services.AddMvc();
+}
+```
 
 ## Modify View Imports
 
 Lastly it is mandatory to modify `/Views/_ViewImports.cshtml` and enable the Bocons Tag Helpers for the web application views:
 
-    @using MyCompany.MyApplication
-    @using MyCompany.MyApplication.Models
-    @using BSolutions.Bocons.Enumerations
-    @using BSolutions.Brecons.Core.Enumerations
-    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-    @addTagHelper *, BSolutions.Bocons
+```markup
+@using MyCompany.MyApplication
+@using MyCompany.MyApplication.Models
+@using BSolutions.Bocons.Enumerations
+@using BSolutions.Brecons.Core.Enumerations
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, BSolutions.Bocons
+```
 
 Please pay particular attention to line 3, 4 and 6 of the above sample and insert these into your `_ViewImports.cshtml` file. Thats all! Now you can build your project and use the Bocons Tag Helpers in every view.

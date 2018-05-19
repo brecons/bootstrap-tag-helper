@@ -4,4 +4,6 @@
 
 ![Range](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/range_01.PNG)
 
-    <input type="range" bc-label="Range Input" min="0" max="100" step="1" />
+```markup
+<input type="range" bc-label="Range Input" min="0" max="100" step="1" />
+```

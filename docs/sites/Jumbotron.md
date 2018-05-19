@@ -4,21 +4,23 @@ A lightweight, flexible component for showcasing hero unit style content. Use th
 
 ![Jumbotron](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/jumbotron_01.PNG)
 
-    <jumbotron>
-        <h1 class="display-3">Hello, world!</h1>
-        <p class="lead">
-            This is a simple hero unit, a simple jumbotron-style component
-            for calling extra attention to featured content or information.
-        </p>
-        <hr class="my-4">
-        <p>
-            It uses utility classes for typography and spacing to space content
-            out within the larger container.
-        </p>
-        <p class="lead">
-            <a bc-button="true" bc-size="Large" href="#">Learn more</a>
-        </p>
-    </jumbotron>
+```markup
+<jumbotron>
+    <h1 class="display-3">Hello, world!</h1>
+    <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component
+        for calling extra attention to featured content or information.
+    </p>
+    <hr class="my-4">
+    <p>
+        It uses utility classes for typography and spacing to space content
+        out within the larger container.
+    </p>
+    <p class="lead">
+        <a bc-button="true" bc-size="Large" href="#">Learn more</a>
+    </p>
+</jumbotron>
+```
 
 ## Jumbotron Configuration `<jumbotron>`
 
@@ -28,4 +30,6 @@ To make the jumbotron full width, and without rounded corners, use the `bc-fluid
 
 ![Jumbotron](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/jumbotron_02.PNG)
 
-    <jumbotron bc-fluid="true"> ... </jumbotron>
+```markup
+<jumbotron bc-fluid="true"> ... </jumbotron>
+```
