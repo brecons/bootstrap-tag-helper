@@ -4,9 +4,11 @@ Provide contextual feedback messages for typical user actions with a handful of 
 
 ![Alert](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_01.PNG)
 
-    <alert>
-        This is a primary alert—check it out!
-    </alert>
+```markup
+<alert>
+    This is a primary alert—check it out!
+</alert>
+```
 
 ## Alert Configuration `<alert>`
 
