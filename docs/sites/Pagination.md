@@ -4,11 +4,13 @@ Indicate a series of related content across multiple pages with the [Bootstrap P
 
 ![Pagination](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_01.PNG)
 
-    <pagination>
-        <pagination-item href="#">1</pagination-item>
-        <pagination-item href="#">2</pagination-item>
-        <pagination-item href="#">3</pagination-item>
-    </pagination>
+```markup
+<pagination>
+    <pagination-item href="#">1</pagination-item>
+    <pagination-item href="#">2</pagination-item>
+    <pagination-item href="#">3</pagination-item>
+</pagination>
+```
 
 ## Pagination Configuration `<pagination>`
 
@@ -18,9 +20,11 @@ Define the size of the pagination with the `bc-size` attribute. Possible sizes a
 
 ![Pagination Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_02.PNG)
 
-    <pagination bc-size="Large"> ... </pagination>
-    <pagination> ... </pagination>
-    <pagination bc-size="Small"> ... </pagination>
+```markup
+<pagination bc-size="Large"> ... </pagination>
+<pagination> ... </pagination>
+<pagination bc-size="Small"> ... </pagination>
+```
 
 ### Previous Button
 
@@ -32,9 +36,11 @@ Also it is possible to set a link reference to these button with the `bc-previou
 
 ![Pagination Previous Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_03.PNG)
 
-    <pagination bc-previous-text="Previous" bc-previous-href="javascript: app.previous();">
-        ...
-    </pagination>
+```markup
+<pagination bc-previous-text="Previous" bc-previous-href="javascript: app.previous();">
+    ...
+</pagination>
+```
 
 ### Next Button
 
@@ -46,9 +52,11 @@ Also it is possible to set a link reference to these button with the `bc-next-hr
 
 ![Pagination Next Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_04.PNG)
 
-    <pagination bc-next-text="Next" bc-next-href="javascript: app.next();">
-        ...
-    </pagination>
+```markup
+<pagination bc-next-text="Next" bc-next-href="javascript: app.next();">
+    ...
+</pagination>
+```
 
 ### Alignment
 
@@ -56,9 +64,11 @@ Change the alignment of pagination with the `bc-alignment` attribute. Possible a
 
 ![Pagination Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_05.PNG)
 
-    <pagination> ... </pagination>
-    <pagination bc-alignment="Center"> ... </pagination>
-    <pagination bc-alignment="Right"> ... </pagination>
+```markup
+<pagination> ... </pagination>
+<pagination bc-alignment="Center"> ... </pagination>
+<pagination bc-alignment="Right"> ... </pagination>
+```
 
 ### Title
 
@@ -72,11 +82,13 @@ Set the `bc-active` attribute to indicate the current page and highlight an item
 
 ![Active Pagination Item](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_06.PNG)
 
-    <pagination>
-        <pagination-item href="#">1</pagination-item>
-        <pagination-item href="#" bc-active="true">2</pagination-item>
-        <pagination-item href="#">3</pagination-item>
-    </pagination>
+```markup
+<pagination>
+    <pagination-item href="#">1</pagination-item>
+    <pagination-item href="#" bc-active="true">2</pagination-item>
+    <pagination-item href="#">3</pagination-item>
+</pagination>
+```
 
 ### Disable
 
@@ -84,8 +96,10 @@ Use the `bc-disable` attribute to deactivate an item.
 
 ![Disabled Pagination Item](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_07.PNG)
 
-    <pagination>
-        <pagination-item href="#">1</pagination-item>
-        <pagination-item href="#" bc-disable="true">2</pagination-item>
-        <pagination-item href="#">3</pagination-item>
-    </pagination>
+```markup
+<pagination>
+    <pagination-item href="#">1</pagination-item>
+    <pagination-item href="#" bc-disable="true">2</pagination-item>
+    <pagination-item href="#">3</pagination-item>
+</pagination>
+```

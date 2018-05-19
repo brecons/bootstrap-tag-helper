@@ -31,16 +31,18 @@ Define a label for form controls by adding the `bc-label` attribute or use the `
 
 ![Label for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_01.PNG)
 
-    <!-- Label via form control attribute -->
-    <form-group>
-        <input type="text" bc-label="E-mail address" />
-    </form-group>
+```markup
+<!-- Label via form control attribute -->
+<form-group>
+    <input type="text" bc-label="E-mail address" />
+</form-group>
 
-    <!-- Label via label tag helper -->
-    <form-group>
-        <label>E-mail address</label>
-        <input type="text" />
-    </form-group>
+<!-- Label via label tag helper -->
+<form-group>
+    <label>E-mail address</label>
+    <input type="text" />
+</form-group>
+```
 
 ### Help
 
@@ -48,16 +50,18 @@ A block-level help text for form controls can be created by using the `bc-help` 
 
 ![Help for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_02.PNG)
 
-    <!-- Block-level help via form control attribute -->
-    <form-group>
-        <input type="text" bc-label="E-mail address" bc-help="Enter your correct e-mail address." />
-    </form-group>
+```markup
+<!-- Block-level help via form control attribute -->
+<form-group>
+    <input type="text" bc-label="E-mail address" bc-help="Enter your correct e-mail address." />
+</form-group>
 
-    <!-- Block-level help via help tag helper -->
-    <form-group>
-        <input type="text" bc-label="E-mail address" />
-        <help>Enter your correct e-mail address.</help>
-    </form-group>
+<!-- Block-level help via help tag helper -->
+<form-group>
+    <input type="text" bc-label="E-mail address" />
+    <help>Enter your correct e-mail address.</help>
+</form-group>
+```
 
 ### Size
 
@@ -65,15 +69,17 @@ Set the height of a form control by adding the `bc-size` attribute. Available si
 
 ![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_03.PNG)
 
-    <form-group>
-        <input type="password" placeholder="Enter password" bc-size="Large" />
-    </form-group>
-    <form-group>
-        <input type="password" placeholder="Enter password" />
-    </form-group>
-    <form-group>
-        <input type="password" placeholder="Enter password" bc-size="Small" />
-    </form-group>
+```markup
+<form-group>
+    <input type="password" placeholder="Enter password" bc-size="Large" />
+</form-group>
+<form-group>
+    <input type="password" placeholder="Enter password" />
+</form-group>
+<form-group>
+    <input type="password" placeholder="Enter password" bc-size="Small" />
+</form-group>
+```
 
 ### Required
 
@@ -81,9 +87,11 @@ Mark a control as required with the `bc-required` attribute. This adds the HTML 
 
 ![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_04.PNG)
 
-    <form-group>
-        <input bc-label="E-mail address" bc-required="true" type="text" />
-    </form-group>
+```markup
+<form-group>
+    <input bc-label="E-mail address" bc-required="true" type="text" />
+</form-group>
+```
 
 ### Validation
 

@@ -4,15 +4,17 @@ Use [Bootstrap Modal](https://getbootstrap.com/docs/4.0/layout/grid/) to add dia
 
 ![Modal](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/modal_01.PNG)
 
-    <modal bc-title="Modal title" bc-toggle-text="Launch modal">
-        <modal-body>
-            Modal body text goes here.
-        </modal-body>
-        <modal-footer>
-            <button type="button" data-dismiss="modal">Close</button>
-            <button type="button">Save changes</button>
-        </modal-footer>
-    </modal>
+```markup
+<modal bc-title="Modal title" bc-toggle-text="Launch modal">
+    <modal-body>
+        Modal body text goes here.
+    </modal-body>
+    <modal-footer>
+        <button type="button" data-dismiss="modal">Close</button>
+        <button type="button">Save changes</button>
+    </modal-footer>
+</modal>
+```
 
 ## Components
 
@@ -46,15 +48,17 @@ There are two ways to define a title for a modal dialog. The easiest way is to s
 
 ![Modal Title](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/modal_02.PNG)
 
-    <modal bc-title="Modal title" bc-toggle-text="Launch modal">
-        ...
-    </modal>
+```markup
+<modal bc-title="Modal title" bc-toggle-text="Launch modal">
+    ...
+</modal>
     
-    <modal bc-toggle-text="Launch modal">
-        <modal-header>
-            <h2>Modal title</h2>
-        <modal-header>
-    </modal>
+<modal bc-toggle-text="Launch modal">
+    <modal-header>
+        <h2>Modal title</h2>
+    <modal-header>
+</modal>
+```
 
 ### Size
 

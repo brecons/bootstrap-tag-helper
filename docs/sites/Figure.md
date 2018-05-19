@@ -4,7 +4,9 @@ Displaying related images and text is very easy with [Bootstrap Figures](https:/
 
 ![Figure](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/figures_01.PNG)
 
-    <figure bc-image="~/images/figure.svg" bc-caption="A caption for the above image." />
+```markup
+<figure bc-image="~/images/figure.svg" bc-caption="A caption for the above image." />
+```
 
 ## Figure Configuration `<figure />`
 
@@ -22,4 +24,6 @@ Aligning the figure's capion is easy with the `bc-alignment` attribute. It is po
 
 ![Figure Caption Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/figures_02.PNG)
 
-    <figure bc-image="~/images/figure.svg" bc-caption="A caption for the above image." bc-alignment="Right" />
+```markup
+<figure bc-image="~/images/figure.svg" bc-caption="A caption for the above image." bc-alignment="Right" />
+```

@@ -4,11 +4,13 @@ The [Bootstrap Button Group](https://getbootstrap.com/docs/4.0/components/button
 
 ![Button Group](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button-group_01.PNG)
 
-    <button-group>
-        <button>Left</button>
-        <button>Middle</button>
-        <button>Right</button>
-    </button-group>
+```markup
+<button-group>
+    <button>Left</button>
+    <button>Middle</button>
+    <button>Right</button>
+</button-group>
+```
 
 ## Button Group Configuration `<button-group>`
 
@@ -18,11 +20,13 @@ Make a set of buttons appear vertically stacked rather than horizontally by addi
 
 ![Vertical Button Group](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button-group_02.PNG)
 
-    <button-group bc-vertical="true">
-        <button>Top</button>
-        <button>Middle</button>
-        <button>Bottom</button>
-    </button-group>
+```markup
+<button-group bc-vertical="true">
+    <button>Top</button>
+    <button>Middle</button>
+    <button>Bottom</button>
+</button-group>
+```
 
 ### Size
 

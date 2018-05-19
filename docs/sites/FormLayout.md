@@ -8,15 +8,17 @@ In a vertical form each control and its corresponding label and help text will p
 
 ![Vertical Form Layout](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/form-layout_01.PNG)
 
-    <form>
-        <form-group>
-            <input type="text" bc-label="User name" bc-help="Usually your e-mail address." />
-        </form-group>
-        <form-group>
-            <input type="password" bc-label="Password" />
-        </form-group>
-        <button type="submit">Log in</button>
-    </form>
+```markup
+<form>
+    <form-group>
+        <input type="text" bc-label="User name" bc-help="Usually your e-mail address." />
+    </form-group>
+    <form-group>
+        <input type="password" bc-label="Password" />
+    </form-group>
+    <button type="submit">Log in</button>
+</form>
+```
 
 ## Horizontal Form
 
@@ -24,15 +26,17 @@ In a horizontal form each control and its corresponding label placed in the same
 
 ![Horizontal Form Layout](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/form-layout_02.PNG)
 
-    <form bc-horizontal="true" bc-label-width-xl="4">
-        <form-group>
-            <input type="text" bc-label="User name" bc-help="Usually your e-mail address." />
-        </form-group>
-        <form-group>
-            <input type="password" bc-label="Password" />
-        </form-group>
-        <button type="submit">Log in</button>
-    </form>
+```markup
+<form bc-horizontal="true" bc-label-width-xl="4">
+    <form-group>
+        <input type="text" bc-label="User name" bc-help="Usually your e-mail address." />
+    </form-group>
+    <form-group>
+        <input type="password" bc-label="Password" />
+    </form-group>
+    <button type="submit">Log in</button>
+</form>
+```
 
 ## Form Configuration `<form>`
 

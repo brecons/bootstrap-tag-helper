@@ -4,16 +4,18 @@
 
 ![Card](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_01.PNG)
 
-    <card>
-        <card-image src="~/images/card.svg" bc-position="Top" />
-        <card-body bc-title="Card title">
-            <p>
-                Some quick example text to build on the card
-                title and make up the bulk of the card's content.
-            </p>
-            <a href="#" bc-button="true">Go somewhere</a>
-        </card-body>
-    </card>
+```markup
+<card>
+    <card-image src="~/images/card.svg" bc-position="Top" />
+    <card-body bc-title="Card title">
+        <p>
+            Some quick example text to build on the card
+            title and make up the bulk of the card's content.
+        </p>
+        <a href="#" bc-button="true">Go somewhere</a>
+    </card-body>
+</card>
+```
 
 ## Components
 
@@ -45,11 +47,13 @@ Use the `<card-group>` tag helper to render cards as a single, attached element 
 
 ![Card Groups](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_02.PNG)
 
-    <card-group>
-        <card> ... </card>
-        <card> ... </card>
-        <card> ... </card>
-    </card-group>
+```markup
+<card-group>
+    <card> ... </card>
+    <card> ... </card>
+    <card> ... </card>
+</card-group>
+```
 
 ### Deck `<card-deck>`
 
@@ -57,11 +61,13 @@ Use the `<card-deck>` tag helper to render cards as a single, not attached eleme
 
 ![Card Deck](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_03.PNG)
 
-    <card-deck>
-        <card> ... </card>
-        <card> ... </card>
-        <card> ... </card>
-    </card-deck>
+```markup
+<card-deck>
+    <card> ... </card>
+    <card> ... </card>
+    <card> ... </card>
+</card-deck>
+```
 
 ### Column `<card-column>`
 
@@ -69,11 +75,13 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
 
 ![Card Column](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_04.PNG)
 
-    <card-column>
-        <card> ... </card>
-        <card> ... </card>
-        ...
-    </card-column>
+```markup
+<card-column>
+    <card> ... </card>
+    <card> ... </card>
+    ...
+</card-column>
+```
 
 ## Card Configuration `<card>`
 
@@ -83,9 +91,11 @@ You can quickly change the text alignment of any card with the `bc-alignment` at
 
 ![Card Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_05.PNG)
 
-    <card> ... </card>
-    <card bc-alignment="Center"> ... </card>
-    <card bc-alignment="Right"> ... </card>
+```markup
+<card> ... </card>
+<card bc-alignment="Center"> ... </card>
+<card bc-alignment="Right"> ... </card>
+```
 
 ### Color
 
@@ -93,7 +103,9 @@ Use the `bc-color` attribute to change the appearance of a card.
 
 ![Card Color](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_06.PNG)
 
-    <card bc-color="Success"> ... </card>
+```markup
+<card bc-color="Success"> ... </card>
+```
 
 ### Border
 
@@ -109,15 +121,17 @@ Use `bc-border` attribute to change just the border of a card.
 
 The `bc-position` attribute is mandatory for each `<card-image>` tag helper and defines the position of the image within the card. Choose the value `Top` when the image is in the top of the card or choose `Bottom` for bottom image placement.
 
-    <card>
-        <card-image src="~/images/card1.svg" bc-position="Top" />
-        <card-body> ... </card-body>
-    </card>
+```markup
+<card>
+    <card-image src="~/images/card1.svg" bc-position="Top" />
+    <card-body> ... </card-body>
+</card>
 
-    <card>
-        <card-body> ... </card-body>
-        <card-image src="~/images/card1.svg" bc-position="Bottom" />
-    </card>
+<card>
+    <card-body> ... </card-body>
+    <card-image src="~/images/card1.svg" bc-position="Bottom" />
+</card>
+```
 
 ## Body Configuration `<card-body>`
 
@@ -131,13 +145,15 @@ With the `bc-subtitle` attribute is is possible to describe the card further.
 
 ![Card Body Subtitle](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_08.PNG)
 
-    <card>
-        <card-body bc-title="Card Title" bc-subtitle="Card Sub Title">
-            <p>
-                Card body and content.
-            </p>
-        </card-body>
-    </card>
+```markup
+<card>
+    <card-body bc-title="Card Title" bc-subtitle="Card Sub Title">
+        <p>
+            Card body and content.
+        </p>
+    </card-body>
+</card>
+```
 
 ### Color
 
@@ -145,10 +161,12 @@ With the `bc-color` attribute it is possible to set the text color for the whole
 
 ![Card Body Subtitle](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_09.PNG)
 
-    <card>
-        <card-body bc-title="Card Title" bc-subtitle="Card Sub Title" bc-color="Danger">
-            <p>
-                Card body and content.
-            </p>
-        </card-body>
-    </card>
+```markup
+<card>
+    <card-body bc-title="Card Title" bc-subtitle="Card Sub Title" bc-color="Danger">
+        <p>
+            Card body and content.
+        </p>
+    </card-body>
+</card>
+```

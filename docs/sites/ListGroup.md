@@ -4,12 +4,14 @@ The [Bootstrap List Group](https://getbootstrap.com/docs/4.0/components/list-gro
 
 ![List Group](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_01.PNG)
 
-    <list-group>
-        <list-group-item>List Group Item 1</list-group-item>
-        <list-group-item>List Group Item 2</list-group-item>
-        <list-group-item>List Group Item 3</list-group-item>
-        <list-group-item>List Group Item 4</list-group-item>
-    </list-group>
+```markup
+<list-group>
+    <list-group-item>List Group Item 1</list-group-item>
+    <list-group-item>List Group Item 2</list-group-item>
+    <list-group-item>List Group Item 3</list-group-item>
+    <list-group-item>List Group Item 4</list-group-item>
+</list-group>
+```
 
 ## Components
 
@@ -35,16 +37,18 @@ For proper styling of an list group item use the `bc-color` attribute.
 
 ![List Group Item Color](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_02.PNG)
 
-    <list-group>
-        <list-group-item bc-color="Primary">List Group Item 1</list-group-item>
-        <list-group-item bc-color="Secondary">List Group Item 2</list-group-item>
-        <list-group-item bc-color="Success">List Group Item 3</list-group-item>
-        <list-group-item bc-color="Danger">List Group Item 4</list-group-item>
-        <list-group-item bc-color="Warning">List Group Item 4</list-group-item>
-        <list-group-item bc-color="Info">List Group Item 4</list-group-item>
-        <list-group-item bc-color="Light">List Group Item 4</list-group-item>
-        <list-group-item bc-color="Dark">List Group Item 4</list-group-item>
-    </list-group>
+```markup
+<list-group>
+    <list-group-item bc-color="Primary">List Group Item 1</list-group-item>
+    <list-group-item bc-color="Secondary">List Group Item 2</list-group-item>
+    <list-group-item bc-color="Success">List Group Item 3</list-group-item>
+    <list-group-item bc-color="Danger">List Group Item 4</list-group-item>
+    <list-group-item bc-color="Warning">List Group Item 4</list-group-item>
+    <list-group-item bc-color="Info">List Group Item 4</list-group-item>
+    <list-group-item bc-color="Light">List Group Item 4</list-group-item>
+    <list-group-item bc-color="Dark">List Group Item 4</list-group-item>
+</list-group>
+```
 
 ### Badge
 
@@ -52,10 +56,12 @@ Add badges to any list group item with the `bc-badge` attribute. You can also se
 
 ![List Group Item Badge](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_03.PNG)
 
-    <list-group>
-        <list-group-item bc-badge="23">List Group Item 1</list-group-item>
-        <list-group-item bc-badge="43" bc-badge-color="Primary">List Group Item 2</list-group-item>
-    </list-group>
+```markup
+<list-group>
+    <list-group-item bc-badge="23">List Group Item 1</list-group-item>
+    <list-group-item bc-badge="43" bc-badge-color="Primary">List Group Item 2</list-group-item>
+</list-group>
+```
 
 ## Link Configuration `<list-group-link>`
 
@@ -73,11 +79,13 @@ Add the `bc-disable` attribute to make the group link appear disabled.
 
 ![Disabled List Group Link](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_04.PNG)
 
-    <list-group>
-        <list-group-item bc-disable="true">Cras justo odio</li>
-        <list-group-item>Dapibus ac facilisis in</li>
-        ...
-    </list-group>
+```markup
+<list-group>
+    <list-group-item bc-disable="true">Cras justo odio</li>
+    <list-group-item>Dapibus ac facilisis in</li>
+    ...
+</list-group>
+```
 
 ### Active
 
@@ -85,11 +93,13 @@ Add the `bc-active` attribute to indicate the current active group link.
 
 ![Active List Group Link](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_05.PNG)
 
-    <list-group>
-        <list-group-item bc-active="true">Cras justo odio</li>
-        <list-group-item>Dapibus ac facilisis in</li>
-        ...
-    </list-group>
+```markup
+<list-group>
+    <list-group-item bc-active="true">Cras justo odio</li>
+    <list-group-item>Dapibus ac facilisis in</li>
+    ...
+</list-group>
+```
 
 ## Button Configuration `<list-group-button>`
 

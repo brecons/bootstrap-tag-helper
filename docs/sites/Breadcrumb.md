@@ -4,6 +4,14 @@ The [Bootstrap Breadcrumb](https://getbootstrap.com/docs/4.0/components/breadcru
 
 ![Breadcrumb](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/breadcrumb_01.PNG)
 
+```markup
+<breadcrumb>
+	<breadcrumb-item bc-href="#">Home</breadcrumb-item>
+	<breadcrumb-item bc-href="#">Library</breadcrumb-item>
+	<breadcrumb-item bc-active="true">Data</breadcrumb-item>
+</breadcrumb>
+```
+
 ## Item Configuration `<breadcrumb-item>`
 
 ### Href

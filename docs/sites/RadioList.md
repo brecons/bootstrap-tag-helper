@@ -4,11 +4,13 @@ The `<radio-list>` tag helper is a wrapper for radio input elements. For a corre
 
 ![Radio List](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/radiolist_01.PNG)
 
-    <radio-list bc-label="Default Radiobuttons">
-        <input type="radio" name="radio1" bc-label="Default" />
-        <input type="radio" name="radio1" bc-label="Disabled" disabled />
-        <input type="radio" name="radio1" bc-label="Checked" checked />
-    </radio-list>
+```markup
+<radio-list bc-label="Default Radiobuttons">
+    <input type="radio" name="radio1" bc-label="Default" />
+    <input type="radio" name="radio1" bc-label="Disabled" disabled />
+    <input type="radio" name="radio1" bc-label="Checked" checked />
+</radio-list>
+```
 
 ## Configuration
 
@@ -18,9 +20,11 @@ Radios can rendered on the same horizontal row by adding the `bc-inline` attribu
 
 ![Inline Radios](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/radiolist_02.PNG)
 
-    <radio-list bc-inline="true">
-        ...
-    </radio-list>
+```markup
+<radio-list bc-inline="true">
+    ...
+</radio-list>
+```
 
 ### Label
 
@@ -28,8 +32,10 @@ To set an label for the list of radios use the `bc-label` attribute.
 
 ![Label for Radio List](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/radiolist_03.PNG)
 
-    <radio-list bc-label="Default Radiobuttons">
-        <input type="radio" name="radio1" bc-label="Default" />
-        <input type="radio" name="radio1" bc-label="Disabled" disabled />
-        <input type="radio" name="radio1" bc-label="Checked" checked />
-    </radio-list>
+```markup
+<radio-list bc-label="Default Radiobuttons">
+    <input type="radio" name="radio1" bc-label="Default" />
+    <input type="radio" name="radio1" bc-label="Disabled" disabled />
+    <input type="radio" name="radio1" bc-label="Checked" checked />
+</radio-list>
+```
