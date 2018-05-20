@@ -2,7 +2,7 @@
 
 Provide contextual feedback messages for typical user actions with a handful of available and flexible [Bootstrap Alert](https://getbootstrap.com/docs/4.0/components/alerts/) messages. The Bocons Tag Helper fully supports the Bootstrap Alert component.
 
-![Alert](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_01.PNG)
+![Alert](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_01.PNG | width=737)
 
 ```markup
 <alert>
