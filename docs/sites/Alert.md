@@ -2,7 +2,7 @@
 
 Provide contextual feedback messages for typical user actions with a handful of available and flexible [Bootstrap Alert](https://getbootstrap.com/docs/4.0/components/alerts/) messages. The Bocons Tag Helper fully supports the Bootstrap Alert component.
 
-![Alert](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_01.PNG | width=737)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_01.PNG" width="737" alt="Bocons Alert">
 
 ```markup
 <alert>
@@ -16,7 +16,7 @@ Provide contextual feedback messages for typical user actions with a handful of 
 
 For proper styling of an alert use the `bc-color` attribute.
 
-![Alert Colors](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_02.PNG" width="737" alt="Alert Colors">
 
 ```markup
 <alert bc-color="Primary">
@@ -49,7 +49,7 @@ For proper styling of an alert use the `bc-color` attribute.
 
 Use the `bc-dismissible` attribute to dismiss any alert inline.
 
-![Dismissible Alert](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_03.PNG" width="738" alt="Dismissible Alert">
 
 ```markup
 <alert bc-color="Warning" bc-dismissible="true">
@@ -61,7 +61,7 @@ Use the `bc-dismissible` attribute to dismiss any alert inline.
 
 Use the `bc-title` attribute to add a title for the alert in addition to the content.
 
-![Alert with Title](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/alert_04.PNG" width="736" alt="Alert with Title">
 
 ```markup
 <alert bc-color="Info" bc-title="Holy guacamole!">
