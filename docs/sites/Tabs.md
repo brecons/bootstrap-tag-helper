@@ -2,7 +2,7 @@
 
 Tabs are a partial functionality of [Bootstrap Navs](https://getbootstrap.com/docs/4.0/components/navs/). The Bocons Tag Helper capsuled these pretty component to easy create tabbable regions.
 
-![Tabs](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_01.PNG" width="526" alt="Bootstrap Tabs">
 
 ```markup
 <tabs>
@@ -26,7 +26,7 @@ Tabs are a partial functionality of [Bootstrap Navs](https://getbootstrap.com/do
 
 Use the `bc-pills` attribute to render the tabs as pills.
 
-![Pills](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_02.PNG" width="521" alt="Pills">
 
 ```markup
 <tabs bc-pills="true">
@@ -52,7 +52,7 @@ Use the `bc-header` attribute to define a title for the tab.
 
 By default the first tab is active on page load. If you want to modify that, use the `bc-active` attribute to activate another tab on startup.
 
-![Active Tabs](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_03.PNG" width="551" alt="Active Tabs">
 
 ```markup
 <tabs>

@@ -92,7 +92,7 @@ public IActionResult Register(RegisterViewModel model)
 
 ### View
 
-![View with Validation](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/validation_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/validation_01.PNG" width="1278" alt="View with Validation">
 
 ```markup
 @model MyCompany.MyApplication.Models.RegisterViewModel
@@ -117,7 +117,7 @@ public IActionResult Register(RegisterViewModel model)
 
 If the `bc-validation` attribute is set to `true`, for each control within the form a validation message will rendered. With this setting it is not longer necessary to set the `bc-validation` attribute on each form control individually.
 
-![Input Field with Validation](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/validation_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/validation_02.PNG" width="515" alt="Input Field with Validation">
 
 ```markup
 <form asp-action="Register" bc-validation="true">
