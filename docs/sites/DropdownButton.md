@@ -2,7 +2,7 @@
 
 The [Bootstrap Dropdown Buttons](https://getbootstrap.com/docs/4.0/components/dropdowns/) are contextual overlays for displaying lists of links and more. These complex controls can easy handled with Bocons Tag Helper.
 
-![Dropdown Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_01.PNG" width="769" alt="Bocons Dropdown Button">
 
 ```markup
 <button-dropdown bc-title="Primary">
@@ -59,7 +59,7 @@ The `bc-title` attribute specifies a title for the button that triggers the drop
 
 Trigger dropdown menus at the `Left`, `Right`, `Top`or `Bottom` (default) of the element by adding the `bc-variation` attribute.
 
-![Dropdown Button Variation](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_02.PNG" width="714" alt="Dropdown Button Variation">
 
 ```markup
 <button-dropdown bc-title="Button Dropdown"> ... </button-dropdown>
@@ -76,7 +76,7 @@ Use the `bc-color` attribute to modify the styling of the dropdown button. Possi
 
 By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its button. Add the `bc-alignment-right` attribute to right align the dropdown menu.
 
-![Dropdown Button Menu Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_03.PNG" width="290" alt="Dropdown Button Menu Alignment">
 
 ```markup
 <button-dropdown bc-title="Dropdown Button with long Title" bc-alignment-right="true">
@@ -88,7 +88,7 @@ By default, a dropdown menu is automatically positioned 100% from the top and al
 
 Add the `bc-size` attribute to define a size for the dropdown button. Possible sizes are `Default`, `Large` or `Small`.
 
-![Dropdown Button Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_04.PNG" width="534" alt="Dropdown Button Sizing">
 
 ```markup
 <button-dropdown bc-title="Large Dropdown" bc-size="Large">
@@ -108,7 +108,7 @@ Add the `bc-size` attribute to define a size for the dropdown button. Possible s
 
 The `bc-split` attribute seperates the dropdown menu trigger from the rest of the button. This make it possible to allocate an seperate action to the button.
 
-![Splitted Dropdown Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_05.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/dropdown_05.PNG" width="332" alt="Splitted Dropdown Button">
 
 ```markup
 <button-dropdown bc-title="Dropdown Button" bc-color="Dark" bc-split="true">

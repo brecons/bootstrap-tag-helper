@@ -2,7 +2,7 @@
 
 A slideshow component for cycling through elements—images or slides of text — like a carousel. Use the [Bootstrap Carousel](https://getbootstrap.com/docs/4.0/components/carousel/) with Bocons and it's Tag Helper.
 
-![Carousel](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_01.PNG" width="493" alt="Bocons Carousel">
 
 ```markup
 <carousel>
@@ -18,7 +18,7 @@ A slideshow component for cycling through elements—images or slides of text — li
 
 Add a previous and next control with `bc-controls` attribute.
 
-![Carousel Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_02.PNG" width="494" alt="Carousel Controls">
 
 ```markup
 <carousel bc-controls="true"> ... </carousel>
@@ -28,7 +28,7 @@ Add a previous and next control with `bc-controls` attribute.
 
 You can also add the indicators to the carousel by setting the `bc-indicators` attribute.
 
-![Carousel Indicators](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_03.PNG" width="495" alt="Carousel Indicators">
 
 ```markup
 <carousel bc-controls="true" bc-indicators="true"> ... </carousel>
@@ -60,7 +60,7 @@ The `bc-alt` attribute specifies an alternate text for the carousel image, if th
 
 Add captions to your slides easily by adding HTML markup within the `<carousel-item>`.
 
-![Carousel Item Captions](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/carousel_04.PNG" width="726" alt="Carousel Item Captions">
 
 ```markup
 <carousel bc-controls="true" bc-indicators="true">
