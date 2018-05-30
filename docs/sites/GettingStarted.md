@@ -6,11 +6,11 @@ This article demonstrates how to include Bocons Tag Helpers into an ASP.NET Core
 
 The first step is to create a new project in Visual Studio. Choose the ***Web*** rubric and subsequent the ***ASP.NET Core Web Application*** template. Adapt the project parameters like ***Name***, ***Location*** and ***Solution name*** and click ***OK***.
 
-![New ASP.NET Core Web Application](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_01.PNG" width="944" alt="New ASP.NET Core Web Application">
 
 In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET Core 2.0*** version as well as a project template. Optionally change the authentication and click ***OK***.
 
-![Project Configuration](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_02.PNG" width="789" alt="Project Configuration">
 
 ***Please note:*** If you choose a empty template you have to include Bootstrap manually with Bower Package Manager. For further informations check Update Bower Packages chapter.
 
@@ -18,11 +18,11 @@ In the following dialog choose the ***.NET Core*** Framework and the ***ASP.NET 
 
 After successfully creating an new ASP.NET Core Web Application, right click on the project folder and choose ***Manage NuGet Packages...*** to open the NuGet Package Manager.
 
-![Manage NuGet Packages](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_03.PNG" width="580" alt="Manage NuGet Packages">
 
 In NuGet Package Manager search for `Bocons` package, choose it and click ***Install***. All necessary bin files and dependencies for Bocons will be installed.
 
-![Bocons NuGet Package](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/getting-started_04.PNG" width="859" alt="Bocons NuGet Package">
 
 ***Please note:*** Not every Bocons package is compatible with every Bootstrap version. For further information check the description of the selected package.
 
