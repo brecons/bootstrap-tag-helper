@@ -2,7 +2,7 @@
 
 The [Bootstrap Progress](https://getbootstrap.com/docs/4.0/components/progress/) is a information bar to show a progress. Use the Bocons Tag Helper to build those components with all known features.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/progress_01.PNG" width="742" alt="Bootstrap Progress">
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/progress_01.PNG" width="742" alt="Bocons Progress">
 
 ```markup
 <progress bc-value="75" />

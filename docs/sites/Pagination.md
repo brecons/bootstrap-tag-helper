@@ -2,7 +2,7 @@
 
 Indicate a series of related content across multiple pages with the [Bootstrap Pagination](https://getbootstrap.com/docs/4.0/components/pagination/) component. Build a Pagination component easy and fast with the Bocons Tag Helper.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_01.PNG" width="188" alt="Bootstrap Pagination">
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_01.PNG" width="188" alt="Bocons Pagination">
 
 ```markup
 <pagination>

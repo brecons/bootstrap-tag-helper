@@ -54,7 +54,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure
 
 public void ConfigureServices(IServiceCollection services)
 {
-	// Add a singleton for IActionContextAccessor
+    // Add a singleton for IActionContextAccessor
     services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
     services.AddMvc();

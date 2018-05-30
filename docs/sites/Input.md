@@ -2,7 +2,7 @@
 
 The text input will be specified with a `<input type="[text, password, email, number]" />` tag and provides a single-line text input field.
 
-![Input](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/input_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/input_01.PNG" width="330" alt="Bocons Input">
 
 ```markup
 <input type="text" bc-label="Text Control" />
@@ -14,7 +14,7 @@ The text input will be specified with a `<input type="[text, password, email, nu
 
 Place an add-on on either side of an text input with the `bc-pre-addon` or `bc-post-addon` attribute.
 
-![Input Addons](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/input_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/input_02.PNG" width="340" alt="Input Addons">
 
 ```markup
 <form-group>
@@ -32,7 +32,7 @@ Place an add-on on either side of an text input with the `bc-pre-addon` or `bc-p
 
 If you want to have an readonly element in your form styled as plain text, use the `bc-static` attribute. These attribute remove the default form field styling and preserve the correct margin and padding.
 
-![Static Input](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/input_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/input_03.PNG" width="205" alt="Static Input">
 
 ```markup
 <form-group>

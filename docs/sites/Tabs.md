@@ -2,7 +2,7 @@
 
 Tabs are a partial functionality of [Bootstrap Navs](https://getbootstrap.com/docs/4.0/components/navs/). The Bocons Tag Helper capsuled these pretty component to easy create tabbable regions.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_01.PNG" width="526" alt="Bootstrap Tabs">
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tabs_01.PNG" width="526" alt="Bocons Tabs">
 
 ```markup
 <tabs>
