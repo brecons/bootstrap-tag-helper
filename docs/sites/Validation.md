@@ -16,7 +16,6 @@ The easiest way to load these packages is to modify the `bower.json`. This file 
 
 ```json
 {
-    ...
     "dependencies": {
         "bootstrap": "v4.0.0-beta",
         "jquery": "3.2.1",

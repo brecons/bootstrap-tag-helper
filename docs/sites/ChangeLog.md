@@ -2,6 +2,18 @@
 
 In this page, you can find a record of all the changes made to Bocons such as bug fixes, new features, etc.
 
+## Version 2.3.0
+
+This release of Bocons supports Bootstrap 4.1.1 and comes with many extensions, bugfixes and a new documentation published on GitHub.
+
+*   (added) New Tag Helper for Range Input Control.
+*   (added) Tables - Support for responsive table breakpoints with new `bc-responsive` attribute.
+*   (added) Tables - Add borderless variant for tables with new `bc-borderless` attribute.
+*   (added) Dropdown Button - Add support for plain text content in Dropdown Button with new `<text>` Tag Helper.
+*   (added) Dropdown Button - Add support for dropdown variation (directions) with new `bc-variation` attribute.
+*   (added) Carousel - Add crossfade support with new `bc-fade` attribute.
+*   (changed) New documentation published on GitHub.
+
 ## Version 2.2.0 (Feb. 23, 2018)
 
 The release of Bocons v2.2.0 provides full support for the first stable version of Bootstrap v4.0.0.
