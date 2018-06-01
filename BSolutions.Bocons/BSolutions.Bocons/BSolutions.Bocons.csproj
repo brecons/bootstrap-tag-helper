@@ -17,7 +17,13 @@
     <PackageTags>aspnetcore aspnetcoremvc taghelper taghelpers tag helpers bootstrap brecons bocons</PackageTags>
     <AssemblyVersion>2.3.0.0</AssemblyVersion>
     <FileVersion>2.3.0.0</FileVersion>
-    <PackageReleaseNotes>- Compatible with final Bootstrap v4.0.0</PackageReleaseNotes>
+    <PackageReleaseNotes>(added) New Tag Helper for Range Input Control.
+(added) Tables - Support for responsive table breakpoints with new bc-responsive attribute.
+(added) Tables - Add borderless variant for tables with new bc-borderless attribute.
+(added) Dropdown Button - Add support for plain text content in Dropdown Button with new &lt;text&gt; Tag Helper.
+(added) Dropdown Button - Add support for dropdown variation (directions) with new bc-variation attribute.
+(added) Carousel - Add crossfade support with new bc-fade attribute.
+(changed) New documentation published on GitHub.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
