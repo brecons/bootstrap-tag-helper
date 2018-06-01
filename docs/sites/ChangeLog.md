@@ -20,7 +20,7 @@ This release of Bocons supports Bootstrap 4.1.1 and comes with many extensions, 
 
 The release of Bocons v2.2.0 provides full support for the first stable version of Bootstrap v4.0.0.
 
-*   (changed) Full support for first stable Bootstrap v4.0.0
+*   ***(changed)*** Full support for first stable Bootstrap v4.0.0
 
 [Source and Download](https://www.nuget.org/packages/BSolutions.Bocons/2.2.0)
 
