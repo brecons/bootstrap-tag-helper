@@ -49,6 +49,10 @@ The `<divider>` tag helper helps you to seperate groups of related menu items.
 
 With the `<header>` tag helper it is possible to add a header to label sections of actions in any dropdown menu.
 
+### Text `<text>`
+
+Place any freeform text within a dropdown menu with `<text` tag helper.
+
 ## Dropdown Button Configuration `<button-dropdown>`
 
 ### Title (Mandatory)
