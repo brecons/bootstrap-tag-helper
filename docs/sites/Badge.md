@@ -2,7 +2,7 @@
 
 The [Bootstrap Badges](https://getbootstrap.com/docs/4.0/components/badge/) are small count and labeling components and fully supported by a Bocons Tag Helper.
 
-![Badge](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/badge_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/badge_01.PNG" width="423" alt="Bocons Badge">
 
 ```markup
 <h1>Example Heading <badge>New</badge></h1>
@@ -14,7 +14,7 @@ The [Bootstrap Badges](https://getbootstrap.com/docs/4.0/components/badge/) are 
 
 For proper styling of a badge use the `bc-color` attribute.
 
-![Colored Badge](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/badge_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/badge_02.PNG" width="426" alt="Colored Badge">
 
 ```markup
 <badge bc-color="Primary">Primary</badge>
@@ -31,7 +31,7 @@ For proper styling of a badge use the `bc-color` attribute.
 
 Use the `bc-pill` attribute to make badges more rounded.
 
-![Colored Badge](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/badge_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/badge_03.PNG" width="470" alt="Pills">
 
 ```markup
 <badge bc-pill="true" bc-color="Primary">Primary</badge>

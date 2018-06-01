@@ -2,7 +2,7 @@
 
 Opt-in and styling of [Bootstrap Tables](https://getbootstrap.com/docs/4.0/content/tables/) with the easy-to-use Bocons Tag Helpers.
 
-![Table](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_01.PNG" width="737" alt="Bocons Table">
 
 ```markup
 <table>
@@ -43,7 +43,7 @@ Opt-in and styling of [Bootstrap Tables](https://getbootstrap.com/docs/4.0/conte
 
 To change the theme of a table - with white, light or dark background - use the `bc-theme` attribute. Possible themes are `Default` (default), `Light` and `Dark`.
 
-![Table Theme](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_02.PNG" width="737" alt="Table Theme">
 
 ```markup
 <table bc-theme="Dark"> ... </table>
@@ -53,7 +53,7 @@ To change the theme of a table - with white, light or dark background - use the 
 
 Use the `bc-striped` attribute to add zebra-striping to any table row.
 
-![Striped Table](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_03.PNG" width="736" alt="Striped Table">
 
 ```markup
 <table bc-striped="true"> ... </table>
@@ -63,7 +63,7 @@ Use the `bc-striped` attribute to add zebra-striping to any table row.
 
 Add the `bc-small` attribute to make tables more compact by cutting cell padding in half.
 
-![Small Table](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_04.PNG" width="737" alt="Small Table">
 
 ```markup
 <table bc-small="true"> ... </table>
@@ -73,10 +73,20 @@ Add the `bc-small` attribute to make tables more compact by cutting cell padding
 
 Add the `bc-bordered` attribute for borders on all sides of the table and cells.
 
-![Bordered Table](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_05.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_05.PNG" width="733" alt="Bordered Table">
 
 ```markup
 <table bc-bordered="true"> ... </table>
+```
+
+### Borderless
+
+Add the `bc-borderless` attribute for a table without borders.
+
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_09.PNG" width="608" alt="Borderless Table">
+
+```markup
+<table bc-borderless="true"> ... </table>
 ```
 
 ### Responsive
@@ -93,6 +103,8 @@ Create responsive tables by setting the `bc-responsive` attribute to make them s
 
 Add the `bc-hover` attribute to enable a hover state on table rows.
 
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_10.PNG" width="749" alt="Hoverable Table">
+
 ```markup
 <table bc-hover="true"> ... </table>
 ```
@@ -103,7 +115,7 @@ Add the `bc-hover` attribute to enable a hover state on table rows.
 
 Similar to themed tables, use the `bc-theme` attribute to make `<thead>` appear `Default` (default), `Dark` or `Light`.
 
-![Table Head Theme](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_06.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_06.PNG" width="739" alt="Table Head Theme">
 
 ```markup
 <table>
@@ -123,7 +135,7 @@ Similar to themed tables, use the `bc-theme` attribute to make `<thead>` appear 
 
 Use the `bc-background` attribute to color table rows.
 
-![Table Row Background](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_07.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_07.PNG" width="535" alt="Table Row Background">
 
 ```markup
 <table>
@@ -147,7 +159,7 @@ Use the `bc-background` attribute to color table rows.
 
 Use the `bc-background` attribute to color table cells.
 
-![Table Cell Background](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_08.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_08.PNG" width="541" alt="Table Cell Background">
 
 ```markup
 <table>

@@ -6,7 +6,7 @@ With a label or a help text it is possible to desribe a control in more detail.
 
 A label shows a name for a control and can be defined with the `<label>` tag within a `<form-group>`.
 
-![Label](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/label_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/label_01.PNG" width="335" alt="Bocons Label">
 
 ```markup
 <form-group>
@@ -23,7 +23,7 @@ Set the `bc-sronly` attribute to hide the label on all devices except screen rea
 
 A block-level help text for form controls can be created with the `<help>` tag helper within the `<form-group>`.
 
-![Help](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/help_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/help_01.PNG" width="335" alt="Bocons Help">
 
 ```markup
 <form-group>

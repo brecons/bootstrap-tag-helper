@@ -2,7 +2,7 @@
 
 Indicate a series of related content across multiple pages with the [Bootstrap Pagination](https://getbootstrap.com/docs/4.0/components/pagination/) component. Build a Pagination component easy and fast with the Bocons Tag Helper.
 
-![Pagination](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_01.PNG" width="188" alt="Bocons Pagination">
 
 ```markup
 <pagination>
@@ -18,7 +18,7 @@ Indicate a series of related content across multiple pages with the [Bootstrap P
 
 Define the size of the pagination with the `bc-size` attribute. Possible sizes are `Large`, `Default` and `Small`.
 
-![Pagination Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_02.PNG" width="320" alt="Pagination Sizing">
 
 ```markup
 <pagination bc-size="Large"> ... </pagination>
@@ -34,7 +34,7 @@ By default the previous button content is an icon (`«`). It is possible to modif
 
 Also it is possible to set a link reference to these button with the `bc-previous-href` attribute.
 
-![Pagination Previous Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_03.PNG" width="414" alt="Pagination Previous Button">
 
 ```markup
 <pagination bc-previous-text="Previous" bc-previous-href="javascript: app.previous();">
@@ -50,7 +50,7 @@ By default the next button content is an icon (`»`). It is possible to modify th
 
 Also it is possible to set a link reference to these button with the `bc-next-href` attribute.
 
-![Pagination Next Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_04.PNG" width="414" alt="Pagination Next Button">
 
 ```markup
 <pagination bc-next-text="Next" bc-next-href="javascript: app.next();">
@@ -62,7 +62,7 @@ Also it is possible to set a link reference to these button with the `bc-next-hr
 
 Change the alignment of pagination with the `bc-alignment` attribute. Possible alignments are `Left` (default), `Center` and `Right`.
 
-![Pagination Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_05.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_05.PNG" width="682" alt="Pagination Alignment">
 
 ```markup
 <pagination> ... </pagination>
@@ -80,7 +80,7 @@ If a page have more than one pagination, it's advisable to provide a descriptive
 
 Set the `bc-active` attribute to indicate the current page and highlight an item.
 
-![Active Pagination Item](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_06.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_06.PNG" width="315" alt="Active Pagination Item">
 
 ```markup
 <pagination>
@@ -94,7 +94,7 @@ Set the `bc-active` attribute to indicate the current page and highlight an item
 
 Use the `bc-disable` attribute to deactivate an item.
 
-![Disabled Pagination Item](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_07.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/pagination_07.PNG" width="309" alt="Disabled Pagination Item">
 
 ```markup
 <pagination>

@@ -2,7 +2,7 @@
 
 The [Bootstrap Buttons](https://getbootstrap.com/docs/4.0/components/buttons/) are elements for actions in forms, dialogs and more. With the Bocons Tag Helper it is very easy to use these Buttons and adjust them to your needs.
 
-![Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_01.PNG" width="641" alt="Bocons Button">
 
 ```markup
 <button type="button" bc-color="Primary">Primary</button>
@@ -25,7 +25,7 @@ Use the `bc-color` attribute to modify the styling of the button. Possible style
 
 In need of a button, but not the hefty background colors they bring? Set the `bc-outline` attribute to `true` to remove all background images and color on any button.
 
-![Outline Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_02.PNG" width="650" alt="Outline Button">
 
 ```markup
 <button type="button" bc-color="Primary" bc-outline="true">Primary</button>
@@ -42,7 +42,7 @@ In need of a button, but not the hefty background colors they bring? Set the `bc
 
 Add the `bc-size` attribute to define a size for the button. Possible sizes are `Default`, `Large` or `Small`.
 
-![Button Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_03.PNG" width="404" alt="Button Sizing">
 
 ```markup
 <button type="button" bc-size="Large">Large button</button>
@@ -54,7 +54,7 @@ Add the `bc-size` attribute to define a size for the button. Possible sizes are 
 
 Create block level buttons - those that span the full width of a parent - by adding the `bc-block` attribute.
 
-![Block Button](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/button_04.PNG" width="739" alt="Block Button">
 
 ```markup
 <button type="button" bc-block="true" bc-color="Primary">Block level button</button>

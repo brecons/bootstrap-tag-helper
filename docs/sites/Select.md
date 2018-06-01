@@ -2,7 +2,7 @@
 
 A dropdown will be specified with a `<select>` tag and provides a dropdown to select a single or multiple values.
 
-![Select](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/select_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/select_01.PNG" width="336" alt="Bocons Select">
 
 ```markup
 <select bc-label="Select Control">

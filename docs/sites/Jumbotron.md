@@ -2,7 +2,7 @@
 
 A lightweight, flexible component for showcasing hero unit style content. Use the Bocons Tag Helper for [Bootstrap Jumbotron](https://getbootstrap.com/docs/4.0/components/jumbotron/) and extend the entire viewport to showcase key marketing messages on your site.
 
-![Jumbotron](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/jumbotron_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/jumbotron_01.PNG" width="1103" alt="Bocons Jumbotron">
 
 ```markup
 <jumbotron>
@@ -28,7 +28,7 @@ A lightweight, flexible component for showcasing hero unit style content. Use th
 
 To make the jumbotron full width, and without rounded corners, use the `bc-fluid` attribute.
 
-![Jumbotron](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/jumbotron_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/jumbotron_02.PNG" width="722" alt="Fluid Jumbotron">
 
 ```markup
 <jumbotron bc-fluid="true"> ... </jumbotron>

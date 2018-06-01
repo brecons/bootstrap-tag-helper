@@ -2,7 +2,7 @@
 
 Opting [Bootstrap Images](https://getbootstrap.com/docs/4.0/layout/grid/) into responsive behavior (so they never become larger than their parent elements) and add lightweight styles to them—all via Bocons Tag Helper attributes.
 
-![Image](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_01.PNG" width="786" alt="Bocons Image">
 
 ```markup
 <img src="~/images/bootstrap-solid.svg" bc-responsive="true" />
@@ -14,7 +14,7 @@ Opting [Bootstrap Images](https://getbootstrap.com/docs/4.0/layout/grid/) into r
 
 In addition to Bootstrap's [border-radius](https://getbootstrap.com/docs/4.0/utilities/borders/) utilities, you can use `bc-thumbnail` attribute to give an image a rounded 1px border appearance.
 
-![Thumbnailed Image](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_02.PNG" width="213" alt="Thumbnailed Image">
 
 ```markup
 <img src="~/images/bootstrap-solid.svg" bc-thumbnail="true" />
@@ -24,7 +24,7 @@ In addition to Bootstrap's [border-radius](https://getbootstrap.com/docs/4.0/uti
 
 Round off the corners of an image by using the `bc-round` attribute.
 
-![Rounded Image](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_03.PNG" width="212" alt="Rounded Image">
 
 ```markup
 <img src="~/images/bootstrap-solid.svg" bc-round="true" />
@@ -34,7 +34,7 @@ Round off the corners of an image by using the `bc-round` attribute.
 
 Set the `bc-circle` attribute to render an image in a circle.
 
-![Circled Image](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/images_04.PNG" width="220" alt="Circled Image">
 
 ```markup
 <img src="~/images/bootstrap-solid.svg" bc-circle="true" />

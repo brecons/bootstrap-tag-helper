@@ -4,7 +4,7 @@ Use the [Bootstrap Media Object](https://getbootstrap.com/docs/4.0/layout/media-
 
 The Bocons Tag Helper supports all features of the Bootstrap Media Object in a easy and intuitive way.
 
-![Media Object](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/media-object_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/media-object_01.PNG" width="737" alt="Bocons Media Object">
 
 ```markup
 <media>
@@ -22,7 +22,7 @@ The Bocons Tag Helper supports all features of the Bootstrap Media Object in a e
 
 Media objects can be infinitely nested, though we suggest you stop at some point. Place nested `<media>` within the `<media-body>` of a parent media object.
 
-![Nested Media Objects](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/media-object_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/media-object_02.PNG" width="737" alt="Nested Media Objects">
 
 ```markup
 <media>
@@ -46,7 +46,7 @@ Media objects can be infinitely nested, though we suggest you stop at some point
 
 Images in a media object can be aligned vertical with flexbox utilities to the `Top` (default), `Middle`, or `Bottom` of a `<media-body>` content. For this purpose use the `bc-vertical-alignment` attribute.
 
-![Image Vertical Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/media-object_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/media-object_03.PNG" width="683" alt="Image Vertical Alignment">
 
 ```markup
 <media>

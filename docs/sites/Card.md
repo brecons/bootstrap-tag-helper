@@ -2,7 +2,7 @@
 
 [Bootstrap Cards](https://getbootstrap.com/docs/4.0/components/card/) provide a flexible and extensible content container with multiple variants and options. All great advantages of this new component concentrated in a Bocons Tag Helper.
 
-![Card](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_01.PNG" width="338" alt="Bocons Card">
 
 ```markup
 <card>
@@ -45,7 +45,7 @@ Cards can be arranged in different layout. The following section describes which
 
 Use the `<card-group>` tag helper to render cards as a single, attached element with equal width and height columns.
 
-![Card Groups](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_02.PNG" width="1101" alt="Card Groups">
 
 ```markup
 <card-group>
@@ -59,7 +59,7 @@ Use the `<card-group>` tag helper to render cards as a single, attached element 
 
 Use the `<card-deck>` tag helper to render cards as a single, not attached element with equal width and height columns.
 
-![Card Deck](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_03.PNG" width="1097" alt="Card Deck">
 
 ```markup
 <card-deck>
@@ -73,7 +73,7 @@ Use the `<card-deck>` tag helper to render cards as a single, not attached eleme
 
 Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns with just CSS by wrapping them in `<card-column>` tag helper.
 
-![Card Column](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_04.PNG" width="743" alt="Card Column">
 
 ```markup
 <card-column>
@@ -89,7 +89,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
 
 You can quickly change the text alignment of any card with the `bc-alignment` attribute.
 
-![Card Alignment](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_05.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_05.PNG" width="333" alt="Card Alignment">
 
 ```markup
 <card> ... </card>
@@ -101,7 +101,7 @@ You can quickly change the text alignment of any card with the `bc-alignment` at
 
 Use the `bc-color` attribute to change the appearance of a card.
 
-![Card Color](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_06.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_06.PNG" width="331" alt="Card Color">
 
 ```markup
 <card bc-color="Success"> ... </card>
@@ -113,7 +113,7 @@ Use `bc-border` attribute to change just the border of a card.
 
 ***Please note:*** You can put a text color with `bc-color` attribute on `<card-body>` element for a unity look.
 
-![Card Border](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_07.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_07.PNG" width="333" alt="Card Border">
 
 ## Image Configuration `<card-image>`
 
@@ -143,7 +143,7 @@ To fit up a card with a eye-catching title use the `bc-title` attribute.
 
 With the `bc-subtitle` attribute is is possible to describe the card further.
 
-![Card Body Subtitle](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_08.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_08.PNG" width="374" alt="Card Body Subtitle">
 
 ```markup
 <card>
@@ -159,7 +159,7 @@ With the `bc-subtitle` attribute is is possible to describe the card further.
 
 With the `bc-color` attribute it is possible to set the text color for the whole card body.
 
-![Card Body Subtitle](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_09.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/card_09.PNG" width="378" alt="Card Body Color">
 
 ```markup
 <card>

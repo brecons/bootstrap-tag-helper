@@ -2,7 +2,7 @@
 
 The [Bootstrap Tooltips](https://getbootstrap.com/docs/4.0/components/tooltips/) are components to add further informations to an element. The Bocons Tag Helper make this very easy.
 
-![Tooltip](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tooltip_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tooltip_01.PNG" width="140" alt="Bocons Tooltip">
 
 ```markup
 <button type="button" bc-tooltip="Tooltip on top">Tooltip on top</button>
@@ -22,7 +22,7 @@ The `bc-tooltip` attribute is available on each HTML element and specifies the t
 
 Not only text can be displayed within a tooltip, also HTML enriched content is allowed. To allow and render HTML tags within a tooltip set the `bc-tooltip-html` to `true`.
 
-![Tooltip with HTML](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tooltip_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tooltip_02.PNG" width="163" alt="Tooltip with HTML">
 
 ```markup
 <button type="button" bc-tooltip="<em>Tooltip</em> <u>with</u> <b>HTML</b>" bc-tooltip-html="true">

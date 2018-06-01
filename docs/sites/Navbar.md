@@ -2,7 +2,7 @@
 
 The [Bootstrap Navbar](https://getbootstrap.com/docs/4.0/components/navbar/) is a powerful, responsive navigation header. Includes support for branding, navigation, and more, including support for our collapse plugin. Try the Bocons Tag Helper for this powerful component.
 
-![Navbar](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_01.PNG" width="741" alt="Bocons Navbar">
 
 ```markup
 <navbar bc-brand-text="Navbar">
@@ -48,7 +48,7 @@ The `<navbar-text>` tag helper allows you to insert plain text into the navigati
 
 A brand text can be added to the navbar with the `bc-brand-text` attribute. These text is displayed at the left side of the navbar.
 
-![Navbar with Brand Text](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_02.PNG" width="736" alt="Navbar with Brand Text">
 
 ```markup
 <navbar bc-brand-text="Navbar">
@@ -72,7 +72,7 @@ If you have defined a brand text or image, it is also possible to provide it wit
 
 Beside a text it is possible to render an image in the brand section of the navbar. This is possible with the `bc-brand-image` attribute. If you define at once a brand text, both elements will be displayed.
 
-![Navbar with Brand Image](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_03.PNG" width="733" alt="Navbar with Brand Image">
 
 ```markup
 <navbar bc-brand-image="~/images/bootstrap.svg" bc-brand-text="Navbar" bc-brand-href="/">
@@ -98,7 +98,7 @@ If you have defined a brand text or image, it is also possible to provide it wit
 
 Theming the navbar is possible via the `bc-theme` attribute. Possible themes are `Light` (default) and `Dark`.
 
-![Navbar Theme](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_04.PNG" width="735" alt="Navbar Theme">
 
 ```markup
 <navbar bc-brand-text="Navbar" bc-theme="Dark">
@@ -112,7 +112,7 @@ Theming the navbar is possible via the `bc-theme` attribute. Possible themes are
 
 In combination with a navbar theme you can set a background color with `bc-background` attribute.
 
-![Navbar Theme](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_05.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_05.PNG" width="736" alt="Navbar Background">
 
 ```markup
 <navbar bc-brand-text="Navbar" bc-theme="Dark" bc-background="Primary">
@@ -130,7 +130,7 @@ Set the `bc-active` attribute to indicate the current page and highlight an item
 
 Use the `bc-disable` attribute to deactivate an item.
 
-![Disabled Navbar Link](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_06.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_06.PNG" width="1122" alt="Disabled Navbar Link">
 
 ```markup
 <navbar bc-brand-text="Navbar">
@@ -149,7 +149,7 @@ Use the `bc-disable` attribute to deactivate an item.
 
 Set a label for the dropdown menu item with the `bc-title` attribute.
 
-![Navbar Dropdown with Title](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_07.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/navbar_07.PNG" width="737" alt="Navbar Dropdown with Title">
 
 ```markup
 <navbar bc-brand-text="Navbar">

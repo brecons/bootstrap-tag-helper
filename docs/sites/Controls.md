@@ -29,7 +29,7 @@ The following configuration attributes are available for all form controls respe
 
 Define a label for form controls by adding the `bc-label` attribute or use the `<label>` tag helper within the `<form-group>`.
 
-![Label for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_01.PNG" width="337" alt="Label for Controls">
 
 ```markup
 <!-- Label via form control attribute -->
@@ -48,7 +48,7 @@ Define a label for form controls by adding the `bc-label` attribute or use the `
 
 A block-level help text for form controls can be created by using the `bc-help` attribute or use the `<help>` tag helper within the `<form-group>`.
 
-![Help for Controls](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_02.PNG" width="335" alt="Help for Controls">
 
 ```markup
 <!-- Block-level help via form control attribute -->
@@ -67,7 +67,7 @@ A block-level help text for form controls can be created by using the `bc-help` 
 
 Set the height of a form control by adding the `bc-size` attribute. Available sizes are `Default`, `Large` or `Small`.
 
-![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_03.PNG" width="454" alt="Control Sizing">
 
 ```markup
 <form-group>
@@ -85,7 +85,7 @@ Set the height of a form control by adding the `bc-size` attribute. Available si
 
 Mark a control as required with the `bc-required` attribute. This adds the HTML `required` attribute to the control markup und mark the control label as required with a star (*).
 
-![Control Sizing](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/controls_04.PNG" width="332" alt="Required Control">
 
 ```markup
 <form-group>
