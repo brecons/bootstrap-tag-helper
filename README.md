@@ -15,7 +15,7 @@ Bocons is one of a [Brecons](https://www.brecons.net) product and provides compo
 ## Getting Started
 The Bocons Tag Helper Library is published as a package in [NuGet](https://www.nuget.org/packages/BSolutions.Bocons). Only three essential steps are necessary for installation.
 
-Find the full [Getting Started Guide](https://www.brecons.net/Documentation/Bocons/GettingStarted) here.
+Find the full [Getting Started Guide](https://www.brecons.net/Documentation/Bocons?view=GettingStarted) here.
 
 ### Install NuGet Packages
 
@@ -52,7 +52,7 @@ Modify `/Views/_ViewImports.cshtml` and enable the Bocons Tag Helpers for the we
 For complete a Bocons documentation, please visit [https://www.brecons.net/Documentation/Bocons](https://www.brecons.net/Documentation/Bocons)
 
 ## Release Notes
-For change logs and release notes, see the [online change logs at brecons.net](https://www.brecons.net/Documentation/Bocons/ChangeLog)
+For change logs and release notes, see the [online change logs at brecons.net](https://www.brecons.net/Documentation/Bocons?view=ChangeLog)
 
 ## License Information
 This project has been released under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). This license applies
