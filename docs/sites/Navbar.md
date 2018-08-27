@@ -145,7 +145,7 @@ Use the `bc-disable` attribute to deactivate an item.
 
 ## Dropdown Configuration `<navbar-dropdown>`
 
-### Title (Mandatory)
+### Title <span class="badge info">Mandatory</span>
 
 Set a label for the dropdown menu item with the `bc-title` attribute.
 

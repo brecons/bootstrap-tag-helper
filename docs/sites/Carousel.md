@@ -44,7 +44,7 @@ Add the `bc-fade` attribute to your carousel to animate slides with a fade trans
 
 ## Item Configuration `<carousel-item>`
 
-### Source (Mandatory)
+### Source <span class="badge info">Mandatory</span>
 
 The `bc-src` attribute specifies the URL of the image file to display inside the carousel item.
 

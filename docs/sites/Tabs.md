@@ -44,7 +44,7 @@ Use the `bc-pills` attribute to render the tabs as pills.
 
 ## Pane Configuration `<tabs-pane>`
 
-### Header (Mandatory)
+### Header <span class="badge info">Mandatory</span>
 
 Use the `bc-header` attribute to define a title for the tab.
 
