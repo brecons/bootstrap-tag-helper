@@ -55,7 +55,7 @@ Place any freeform text within a dropdown menu with `<text` tag helper.
 
 ## Dropdown Button Configuration `<button-dropdown>`
 
-### Title (Mandatory)
+### Title <span class="badge info">Mandatory</span>
 
 The `bc-title` attribute specifies a title for the button that triggers the dropdown menu.
 

@@ -117,7 +117,7 @@ Use `bc-border` attribute to change just the border of a card.
 
 ## Image Configuration `<card-image>`
 
-### Position (Mandatory)
+### Position <span class="badge info">Mandatory</span>
 
 The `bc-position` attribute is mandatory for each `<card-image>` tag helper and defines the position of the image within the card. Choose the value `Top` when the image is in the top of the card or choose `Bottom` for bottom image placement.
 

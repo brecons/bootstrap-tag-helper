@@ -34,7 +34,7 @@ A modal dialog footer can optionally added with a `<modal-footer>` tag helper wi
 
 ## Modal Configuration `<modal>`
 
-### Toggle Text (Mandatory)
+### Toggle Text <span class="badge info">Mandatory</span>
 
 The `<modal>` automatically renders a toggle button for the modal dialog. With the `bc-toggle-text` attribute it is possible to define a text for the toggle button.
 

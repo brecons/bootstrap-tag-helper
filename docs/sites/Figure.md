@@ -10,11 +10,11 @@ Displaying related images and text is very easy with [Bootstrap Figures](https:/
 
 ## Figure Configuration `<figure />`
 
-### Image (Mandatory)
+### Image <span class="badge info">Mandatory</span>
 
 A image souce for the figure element can defined with the `bc-image` attribute.
 
-### Caption (Mandatory)
+### Caption <span class="badge info">Mandatory</span>
 
 To set a caption for the displayed image use the `bc-caption` attribute.
 

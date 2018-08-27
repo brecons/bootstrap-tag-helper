@@ -12,7 +12,7 @@ A [Bootstrap Popover](https://getbootstrap.com/docs/4.0/components/popovers/) is
 
 ## Popover Configuration
 
-### Content (Mandatory) (Trigger Attribute)
+### Content <span class="badge info">Mandatory</span> <span class="badge info">Trigger Attribute</span>
 
 The `bc-popover` attribute is available on each HTML element and specifies the popover content. After these attribute is set for an element further attributes are available to concretize the popover definition.
 

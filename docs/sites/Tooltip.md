@@ -10,7 +10,7 @@ The [Bootstrap Tooltips](https://getbootstrap.com/docs/4.0/components/tooltips/)
 
 ## Tooltip Configuration
 
-### Text (Mandatory) (Trigger Attribute)
+### Text <span class="badge info">Mandatory</span> <span class="badge info">Trigger Attribute</span>
 
 The `bc-tooltip` attribute is available on each HTML element and specifies the tooltip text. After these attribute is set for an element further attributes are available to concretize the tooltip definition.
 
