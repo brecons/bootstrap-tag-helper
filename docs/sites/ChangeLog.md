@@ -2,6 +2,14 @@
 
 In this page, you can find a record of all the changes made to Bocons such as bug fixes, new features, etc.
 
+## Version 2.4.0 <small class="release-date">Currently not released</small>
+
+This release of Bocons supports Bootstrap 4.1.1 and comes with many extensions, bugfixes and a new documentation published on GitHub.
+
+*   ***(changed)*** Table: The attribute `bc-bordered` has been replaced by the `bc-border` attribute.
+
+[Source and Download](https://www.nuget.org/packages/BSolutions.Bocons/2.3.0)
+
 ## Version 2.3.0 <small class="release-date">Jun. 01, 2018</small>
 
 This release of Bocons supports Bootstrap 4.1.1 and comes with many extensions, bugfixes and a new documentation published on GitHub.
