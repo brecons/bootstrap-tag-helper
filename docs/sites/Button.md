@@ -71,7 +71,7 @@ Make buttons look inactive by adding the `bc-disable` attribute and set it to `t
 
 ## Link Configuration `<a>`
 
-### Button (Trigger Attribute)
+### Button <span class="badge info">Trigger Attribute</span>
 
 You can also use the button attributes with `<a>` tags and render a link like a button. To do that it is important to set the trigger attribute `bc-button` for a link.
 

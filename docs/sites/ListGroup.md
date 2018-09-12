@@ -2,7 +2,7 @@
 
 The [Bootstrap List Group](https://getbootstrap.com/docs/4.0/components/list-group/) is a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within. And the best: fully supported by a Bocons Tag Helper.
 
-![List Group](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_01.PNG" width="535" alt="Bocons List Group">
 
 ```markup
 <list-group>
@@ -35,7 +35,7 @@ Use the `<list-group-button>` tag helper to create actionable list group items w
 
 For proper styling of an list group item use the `bc-color` attribute.
 
-![List Group Item Color](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_02.PNG" width="533" alt="List Group Item Color">
 
 ```markup
 <list-group>
@@ -54,7 +54,7 @@ For proper styling of an list group item use the `bc-color` attribute.
 
 Add badges to any list group item with the `bc-badge` attribute. You can also set a color for the badge with the `bc-badge-color` attribute.
 
-![List Group Item Badge](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_03.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_03.PNG" width="534" alt="List Group Item Badge">
 
 ```markup
 <list-group>
@@ -77,7 +77,7 @@ Add badges to any list group link with the `bc-badge` attribute. You can also se
 
 Add the `bc-disable` attribute to make the group link appear disabled.
 
-![Disabled List Group Link](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_04.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_04.PNG" width="410" alt="Disabled List Group Link">
 
 ```markup
 <list-group>
@@ -91,7 +91,7 @@ Add the `bc-disable` attribute to make the group link appear disabled.
 
 Add the `bc-active` attribute to indicate the current active group link.
 
-![Active List Group Link](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_05.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/list-group_05.PNG" width="415" alt="Active List Group Link">
 
 ```markup
 <list-group>

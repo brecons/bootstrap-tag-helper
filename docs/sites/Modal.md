@@ -2,7 +2,7 @@
 
 Use [Bootstrap Modal](https://getbootstrap.com/docs/4.0/layout/grid/) to add dialogs to your site for lightboxes, user notifications, or completely custom content. These quite complex component is capsuled within a Bocons Tag Helper and is very easy to use!
 
-![Modal](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/modal_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/modal_01.PNG" width="513" alt="Bocons Modal">
 
 ```markup
 <modal bc-title="Modal title" bc-toggle-text="Launch modal">
@@ -34,7 +34,7 @@ A modal dialog footer can optionally added with a `<modal-footer>` tag helper wi
 
 ## Modal Configuration `<modal>`
 
-### Toggle Text (Mandatory)
+### Toggle Text <span class="badge info">Mandatory</span>
 
 The `<modal>` automatically renders a toggle button for the modal dialog. With the `bc-toggle-text` attribute it is possible to define a text for the toggle button.
 
@@ -46,7 +46,7 @@ The `<modal>` automatically renders a toggle button for the modal dialog. With t
 
 There are two ways to define a title for a modal dialog. The easiest way is to set a title with the `bc-title` attribute. The second way is to specify an header tag (e.g. `<h2>`) within the `<modal-header>`.
 
-![Modal Title](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/modal_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/modal_02.PNG" width="517" alt="Modal with Title">
 
 ```markup
 <modal bc-title="Modal title" bc-toggle-text="Launch modal">

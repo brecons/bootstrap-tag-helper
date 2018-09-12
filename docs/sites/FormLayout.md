@@ -6,7 +6,7 @@ With [Bootstrap Form Layout](https://getbootstrap.com/docs/4.0/components/forms/
 
 In a vertical form each control and its corresponding label and help text will placed in a separate row.
 
-![Vertical Form Layout](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/form-layout_01.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/form-layout_01.PNG" width="553" alt="Vertical Form Layout">
 
 ```markup
 <form>
@@ -24,7 +24,7 @@ In a vertical form each control and its corresponding label and help text will p
 
 In a horizontal form each control and its corresponding label placed in the same row. The help text will placed under the control.
 
-![Horizontal Form Layout](https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/form-layout_02.PNG)
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/form-layout_02.PNG" width="552" alt="Horizontal Form Layout">
 
 ```markup
 <form bc-horizontal="true" bc-label-width-xl="4">

@@ -2,7 +2,7 @@
 
 Opt-in and styling of [Bootstrap Tables](https://getbootstrap.com/docs/4.0/content/tables/) with the easy-to-use Bocons Tag Helpers.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_01.PNG" width="737" alt="Bootstrap Table">
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_01.PNG" width="737" alt="Bocons Table">
 
 ```markup
 <table>
@@ -79,6 +79,16 @@ Add the `bc-bordered` attribute for borders on all sides of the table and cells.
 <table bc-bordered="true"> ... </table>
 ```
 
+### Borderless
+
+Add the `bc-borderless` attribute for a table without borders.
+
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_09.PNG" width="608" alt="Borderless Table">
+
+```markup
+<table bc-borderless="true"> ... </table>
+```
+
 ### Responsive
 
 Create responsive tables by setting the `bc-responsive` attribute to make them scroll horizontally on small devices. Possible values are `XSmall`, `Small`, `Medium`, `Large` or `XLarge`. The definition of the respective breakpoint determines when no scroll bar is displayed for the table.
@@ -92,6 +102,8 @@ Create responsive tables by setting the `bc-responsive` attribute to make them s
 ### Hover
 
 Add the `bc-hover` attribute to enable a hover state on table rows.
+
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_10.PNG" width="749" alt="Hoverable Table">
 
 ```markup
 <table bc-hover="true"> ... </table>
