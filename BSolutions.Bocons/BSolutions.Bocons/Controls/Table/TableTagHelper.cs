@@ -11,8 +11,7 @@
 
         private const string StripedAttributeName = AttributePrefix + "striped";
         private const string SmallAttributeName = AttributePrefix + "small";
-        private const string BorderedAttributeName = AttributePrefix + "bordered";
-        private const string BorderlessAttributeName = AttributePrefix + "borderless";
+        private const string BorderAttributeName = AttributePrefix + "border";
         private const string HoverAttributeName = AttributePrefix + "hover";
         private const string ThemeAttributeName = AttributePrefix + "theme";
         private const string ResponsiveAttributeName = AttributePrefix + "responsive";
@@ -27,11 +26,8 @@
         [HtmlAttributeName(SmallAttributeName)]
         public bool IsSmall { get; set; }
 
-        [HtmlAttributeName(BorderedAttributeName)]
-        public bool IsBordered { get; set; }
-
-        [HtmlAttributeName(BorderlessAttributeName)]
-        public bool IsBorderless { get; set; }
+        [HtmlAttributeName(BorderAttributeName)]
+        public TableBorder Border { get; set; } = TableBorder.Regular;
 
         [HtmlAttributeName(HoverAttributeName)]
         public bool IsHover { get; set; }
@@ -63,16 +59,15 @@
                 output.AddCssClass("table-sm");
             }
 
-            // Bordered
-            if (this.IsBordered)
+            // Border
+            switch(this.Border)
             {
-                output.AddCssClass("table-bordered");
-            }
-
-            // Borderless
-            if(this.IsBorderless)
-            {
-                output.AddCssClass("table-borderless");
+                case TableBorder.Bordered:
+                    output.AddCssClass("table-bordered");
+                    break;
+                case TableBorder.Borderless:
+                    output.AddCssClass("table-borderless");
+                    break;
             }
 
             // Hover
