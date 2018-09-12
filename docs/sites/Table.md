@@ -69,24 +69,22 @@ Add the `bc-small` attribute to make tables more compact by cutting cell padding
 <table bc-small="true"> ... </table>
 ```
 
-### Bordered
+### Border
 
-Add the `bc-bordered` attribute for borders on all sides of the table and cells.
+Add the `bc-border` attribute to specify the borders on all sides of the table and cells. Possible border styles are `Regular`(default) for only horizontal borders, `Bordered` for horizontal and vertical borders and `Borderless` for no borders.
 
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_05.PNG" width="733" alt="Bordered Table">
-
-```markup
-<table bc-bordered="true"> ... </table>
-```
-
-### Borderless
-
-Add the `bc-borderless` attribute for a table without borders.
-
-<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_09.PNG" width="608" alt="Borderless Table">
+<img class="img-shadow img-responsive center-block" src="https://raw.githubusercontent.com/brecons/bootstrap-tag-helper/master/docs/images/tables_05.PNG" width="1113" alt="Borders for Table">
 
 ```markup
-<table bc-borderless="true"> ... </table>
+<table>
+    ...
+</table>
+<table bc-border="Bordered">
+    ...
+</table>
+<table bc-border="Borderless">
+    ...
+</table>
 ```
 
 ### Responsive
