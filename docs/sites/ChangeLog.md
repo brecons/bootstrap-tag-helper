@@ -8,6 +8,7 @@ This release of Bocons supports Bootstrap 4.1.3 and comes with many extensions, 
 
 <ul class="changelog">
     <li class="ch-added">Input: Support for Bootstrap Buttons with <code><input type="button" /></code> Tag Helper.</li>
+    <li class="ch-added">Add support for Target Framework <code>netstandard1.6</code>.</li>
     <li class="ch-changed">Table: The attribute <code>bc-bordered</code> has been replaced by the <code>bc-border</code> attribute.</li>
 </ul>
 
