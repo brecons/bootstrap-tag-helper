@@ -2,7 +2,7 @@
 
 In this page, you can find a record of all the changes made to Bocons such as bug fixes, new features, etc.
 
-## Version 2.4.0 <small class="release-date">Currently not released</small>
+## Version 2.4.0 <small class="release-date">Oct. 09, 2018</small>
 
 This release of Bocons supports Bootstrap 4.1.3 and comes with many extensions, bugfixes and a new documentation published on GitHub.
 

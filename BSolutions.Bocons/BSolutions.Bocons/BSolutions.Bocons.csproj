@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard1.6;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>2.3.0</Version>
+    <Version>2.4.0</Version>
     <Authors>Timm Bremus</Authors>
     <Company>Bremus Solutions</Company>
     <Product>Bocons - Tag Helper for Bootstrap</Product>
@@ -15,8 +15,8 @@
     <PackageIconUrl>http://nuget.bremus-solutions.de/package-logo.png</PackageIconUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageTags>aspnetcore aspnetcoremvc taghelper taghelpers tag helpers bootstrap brecons bocons</PackageTags>
-    <AssemblyVersion>2.3.0.0</AssemblyVersion>
-    <FileVersion>2.3.0.0</FileVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+    <FileVersion>2.4.0.0</FileVersion>
     <PackageReleaseNotes>(added) New Tag Helper for Range Input Control.
 (added) Tables - Support for responsive table breakpoints with new bc-responsive attribute.
 (added) Tables - Add borderless variant for tables with new bc-borderless attribute.
