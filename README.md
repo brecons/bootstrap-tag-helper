@@ -58,7 +58,7 @@ For change logs and release notes, see the [online change logs at brecons.net](h
 This project has been released under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). This license applies
 ONLY to the source of this repository and does not extend to any other Brecons distribution or variant.
 
-> Copyright 2016 - 2017 Bremus Solutions
+> Copyright 2016 - 2019 Bremus Solutions
 
 > Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
