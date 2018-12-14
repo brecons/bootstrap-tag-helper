@@ -115,7 +115,13 @@
         /// <param name="output">The tag helper output.</param>
         private void RenderButtonControl(TagHelperOutput output)
         {
+            output.AddCssClass("btn");
 
+            // Size
+            if (this.Size != Size.Default)
+            {
+                output.AddCssClass($"btn-{this.Size.GetEnumInfo().Name}");
+            }
         }
 
         /// <summary>
