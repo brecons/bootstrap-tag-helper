@@ -51,15 +51,15 @@
             }
         }
 
-        public static IHtmlContent Generate(ModelExpression model, ViewContext viewContext)
+        public static IHtmlContent Generate(FormTagHelperBase tagHelper)
         {
             var builder = new TagBuilder("div") { TagRenderMode = TagRenderMode.Normal };
             builder.AddCssClass("invalid-feedback");
-            builder.MergeAttribute("data-valmsg-for", model.Metadata.PropertyName);
+            builder.MergeAttribute("data-valmsg-for", tagHelper.Id);
             builder.MergeAttribute("data-valmsg-replace", "true");
 
             // Error Message
-            var modelState = viewContext.ViewData.ModelState.FirstOrDefault(k => k.Key == model.Metadata.PropertyName).Value;
+            var modelState = tagHelper.ViewContext.ViewData.ModelState.FirstOrDefault(k => k.Key == tagHelper.For.Metadata.PropertyName).Value;
             if (modelState != null && modelState.ValidationState == ModelValidationState.Invalid)
             {
                 builder.AddCssClass("field-validation-error");

@@ -80,7 +80,6 @@
             {
                 output.AddCssClass("dropdown-toggle");
                 output.MergeAttribute("type", "button");
-                output.MergeAttribute("id", this.Id);
                 output.MergeAttribute("data-toggle", "dropdown");
                 output.MergeAttribute("aria-haspopup", "true");
                 output.MergeAttribute("aria-expanded", "false");
@@ -100,7 +99,6 @@
             TagBuilder button = new TagBuilder("button");
             button.AddCssClass("btn dropdown-toggle");
             button.MergeAttribute("type", "button");
-            button.MergeAttribute("id", this.Id);
             button.MergeAttribute("data-toggle", "dropdown");
             button.MergeAttribute("aria-haspopup", "true");
             button.MergeAttribute("aria-expanded", "false");
