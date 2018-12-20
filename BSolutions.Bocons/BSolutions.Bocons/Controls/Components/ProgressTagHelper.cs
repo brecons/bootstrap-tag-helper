@@ -50,6 +50,9 @@
             output.TagMode = TagMode.StartTagAndEndTag;
             output.AddCssClass("progress");
 
+            // Height
+            output.AddCssStyle("height", $"{this.Height}px");
+
             output.Content.SetHtmlContent(this.BuildProgressbar());
         }
 
@@ -63,7 +66,7 @@
             progressbar.MergeAttribute("aria-valuemax", "100");
             progressbar.MergeAttribute("aria-valuenow", this.Value.ToString());
             progressbar.MergeAttribute("role", "progressbar");
-            progressbar.MergeAttribute("style", $"width: {this.Value}%; height: {this.Height}px");
+            progressbar.MergeAttribute("style", $"width: {this.Value}%;");
 
             // Label
             if (this.HasLabel)
