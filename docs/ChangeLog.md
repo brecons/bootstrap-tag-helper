@@ -1,10 +1,10 @@
-# Change Logs & Releases
+# Change Log and Releases
 
 In this page, you can find a record of all the changes made to Bocons such as bug fixes, new features, etc.
 
-## Version 2.4.0 <small class="release-date">Oct. 09, 2018</small>
+## Version 2.4.0 <small class="release-date">Dec. 21, 2018</small>
 
-This release of Bocons supports Bootstrap 4.1.3 and comes with many extensions, bugfixes and a new documentation published on GitHub.
+This release of Bocons supports Bootstrap 4.1.3 and comes with some bugfixes and small changes requested by the community.
 
 <ul class="changelog">
     <li class="ch-added">Input: Support for Bootstrap Buttons with <code>&lt;input type="button" /&gt;</code> Tag Helper.</li>
