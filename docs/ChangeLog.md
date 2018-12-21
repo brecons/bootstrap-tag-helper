@@ -11,7 +11,7 @@ This release of Bocons supports Bootstrap 4.1.3 and comes with some bugfixes and
     <li class="ch-added">Add support for Target Framework <code>netstandard1.6</code>.</li>
     <li class="ch-changed">Table: The attribute <code>bc-bordered</code> has been replaced by the <code>bc-border</code> attribute.</li>
     <li class="ch-changed">Switch from bower package manager to Yarn.</li>
-    <li class="ch-fixed">Form Controls: Wrong "for" attribute generated in label tags.</li>
+    <li class="ch-fixed">Form Controls: Wrong <code>for</code> attribute generated in label tags.</li>
     <li class="ch-fixed">Progress: Height applied to wrong tag.</li>
 </ul>
 
