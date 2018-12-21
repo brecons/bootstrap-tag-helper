@@ -24,7 +24,7 @@
             // Validation Message
             if (tagHelper.For != null && tagHelper.Validation)
             {
-                output.PostElement.AppendHtml(ValidationTagHelper.Generate(tagHelper.For, tagHelper.ViewContext));
+                output.PostElement.AppendHtml(ValidationTagHelper.Generate(tagHelper));
             }
         }
 
