@@ -18,26 +18,14 @@ The Bocons Tag Helper Library is only available for ASP.NET Core applications. T
     <tbody>
         <tr>
             <td>.NET Standard</td>
-            <td>2.0</td>
-            <td><code>netstandard2.0</code></td>
-            <td><span class="label label-success">Supported</span></td>
-        </tr>
-        <tr>
-            <td>.NET Standard</td>
             <td>1.6</td>
             <td><code>netstandard1.6</code></td>
             <td><span class="label label-success">Supported</span></td>
         </tr>
         <tr>
-            <td>.NET Core Application</td>
+            <td>.NET Standard</td>
             <td>2.0</td>
-            <td><code>netcoreapp2.0</code></td>
-            <td><span class="label label-success">Supported</span></td>
-        </tr>
-        <tr>
-            <td>.NET Core Application</td>
-            <td>1.0</td>
-            <td><code>netcoreapp1.0</code></td>
+            <td><code>netstandard2.0</code></td>
             <td><span class="label label-success">Supported</span></td>
         </tr>
     </tbody>
